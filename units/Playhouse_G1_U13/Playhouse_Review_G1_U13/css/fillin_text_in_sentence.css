@@ -79,7 +79,7 @@
 
 .fill_in .img_fillin_gr {
     width: 45%;
-    height: 130px;
+    height: 100px;
     position: relative;
     /* flex-direction: column; */
     gap: 25px;

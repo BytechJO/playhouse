@@ -510,6 +510,11 @@ function setLoadedStatus(val) {
                                 buildLineDrawBody(linedraw_data);
                             }
                             break;
+                             case 'drawwrite':
+                            if (typeof drawwrite_data != undefined && drawwrite_data != null) {
+                                buildDrawWriteBody(drawwrite_data);
+                            }
+                            break;
                         case 'letterpath':
                             if (typeof letterpath_data != undefined && letterpath_data != null) {
                                 buildLetterPathBody(letterpath_data);
@@ -541,6 +546,7 @@ function setLoadedStatus(val) {
                     case 'wordsearch':
                     case 'linedraw':
                     case 'dragndrop':
+            
                     case 'coloring':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
@@ -693,8 +699,8 @@ function doWindowResize() {
     //-------------
     if (isMobile()) maskWidth = 0;
     if ($('.mask_parent').length > 0) {
-        $('.mask_left').css('width', maskWidth);
-        $('.mask_right').css('width', maskWidth);
+        // $('.mask_left').css('width', maskWidth);
+        // $('.mask_right').css('width', maskWidth);
 
         $('.rotator').css('right', (Number(maskWidth.slice(0, -2)) - 15).toString() + 'px');
     }

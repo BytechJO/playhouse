@@ -289,7 +289,8 @@ footer .emt_space.noWidth {
     transform: scaleX(-1); */
     cursor: pointer;
     transition: all .3s ease-in-out;
-    width: fit-content;
+    
+
 }
 
 .audioIcon:hover {
@@ -392,14 +393,14 @@ footer .emt_space.noWidth {
 /* ====================================================== */
 @media (min-width: 1200px) {
 
-    .container,
+    /* .container,
     .container-sm,
     .container-md,
     .container-lg,
     .container-xl {
         max-width: 1360px;
 
-    }
+    } */
 }
 
 /* ------------------------------------------------ */

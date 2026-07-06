@@ -53,6 +53,7 @@
 .activity_container ul {
   margin: 0px;
   padding: 0px;
+      gap: 20px;
   justify-content: center;
 }
 

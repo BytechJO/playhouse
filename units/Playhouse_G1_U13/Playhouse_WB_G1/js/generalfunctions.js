@@ -236,7 +236,7 @@ function playThisAudio(aAudioObj, aState) {
     stopPlaying();
     var _currFile = getCurrFileOrDirectory('file');
     theAudio.src = ((aAudioObj.data('audio')) != undefined && (aAudioObj.data('audio')) != null) ? (aAudioObj.data('audio')) : 'none';
-    if (_currFile == 'playhouse_intro.html') {
+    if (_currFile == 'snapshot.html') {
         if (typeof aState != undefined && aState != null) {
             if (aState == 'new') {
                 audioIndex = 0;
@@ -271,7 +271,7 @@ function playThisAudio(aAudioObj, aState) {
                     aAudioObj.css(tmpCss[0], tmpCss[1]);
                     // -- for all the child elements -- 
                     if (aAudioObj[0].hasChildNodes()) {
-                        if (_currFile == 'playhouse_intro.html') {
+                        if (_currFile == 'snapshot.html') {
                             (aAudioObj.find("span").eq(audioIndex)).each(function () {
                                 var tstyle1 = $(this).css(tmpCss[0]);
                                 $(this).data(tmpCss[0], tstyle1);
@@ -429,7 +429,7 @@ function setLoadedStatus(val) {
     _loadingStatus = 'no';
    
     if (_currDir == 'views') {
-        if (!_currFile.startsWith('slide_') && _currFile != 'playhouse_intro.html') {
+        if (_currFile != 'reading.html' && _currFile != 'snapshot.html') {
             _actIndx = getIndexOfFile(_currFile, _activityData.list, "file");
             if (_actIndx != -1) {
                 _fileType = ((_activityData.list)[_actIndx]).type;
@@ -438,8 +438,7 @@ function setLoadedStatus(val) {
             }
             //console.log('_activityData >> ', _actIndx, _fileType, _fileBuild, _fileSubType);
         } else {
-            _actIndx = getIndexOfFile(_currFile, _activityData.list, "file");
-            _fileType = (_currFile.startsWith('slide_')) ? 'reading' : 'playhouse_intro';
+            _fileType = (_currFile == 'reading.html') ? 'reading' : 'snapshot';
         }
     }
     console.log('Load - Status > ', val, _loadingObj, _currFile, _fileType, _fileBuild);
@@ -457,12 +456,11 @@ function setLoadedStatus(val) {
             if (typeof welcome_data != undefined && welcome_data != null && typeof welcome_data != undefined && welcome_data != null) {
                 buildWelcomeContent(welcome_data);
             }
-        } else if (_currFile == 'playhouse_intro.html') {
+        } else if (_currFile == 'snapshot.html') {
             if (typeof snapshot_data != undefined && snapshot_data != null && typeof snapshotPopup_data != undefined && snapshotPopup_data != null) {
-                buildSnapShotContent(snapshot_data, snapshotPopup_data, Popups_data);
-                callsnapshotfunctions(_activityData, _actIndx);
+                buildSnapShotContent(snapshot_data, snapshotPopup_data);
             }
-        } else if (_currFile.startsWith('slide_')) {
+        } else if (_currFile == 'reading.html') {
             if (typeof reading_data != undefined && reading_data != null) {
                 buildReadingHTML(reading_data);
             }
@@ -512,6 +510,11 @@ function setLoadedStatus(val) {
                                 buildLineDrawBody(linedraw_data);
                             }
                             break;
+                             case 'drawwrite':
+                            if (typeof drawwrite_data != undefined && drawwrite_data != null) {
+                                buildDrawWriteBody(drawwrite_data);
+                            }
+                            break;
                         case 'letterpath':
                             if (typeof letterpath_data != undefined && letterpath_data != null) {
                                 buildLetterPathBody(letterpath_data);
@@ -525,23 +528,17 @@ function setLoadedStatus(val) {
             }
         }
 
-        if (typeof stereo_data != undefined && stereo_data != null) {
-            buildStereo(stereo_data);
-            audio(stereo_data);
-        }
+ 
 
     } else if (val == _currFile) {
-        if (_currFile == 'index.html' || _currFile == 'playhouse_intro.html') {
+        if (_currFile == 'index.html' || _currFile == 'snapshot.html') {
             _loadingStatus = 'loaded';
             doWindowResize();
         } else {
             if (_fileType != '') {
                 switch (_fileType) {
                     case 'reading':
-                        callReadingFunctions(_activityData, _actIndx);
-                        break;
-                    case 'playhouse_intro':
-                        callsnapshotfunctions(_activityData, _actIndx);
+                        callReadingFunctions();
                         break;
                     case 'fillin':
                     case 'mcq':
@@ -549,6 +546,7 @@ function setLoadedStatus(val) {
                     case 'wordsearch':
                     case 'linedraw':
                     case 'dragndrop':
+            
                     case 'coloring':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
@@ -645,7 +643,7 @@ function doWindowResize() {
     contentHeight = win.innerHeight() - ($('header').innerHeight() + ($('footer').innerHeight() - 20));
     // ------------ welcome page --------------
     $('.wordsList_wrap').css('max-height', (contentHeight / 2) + 'px');
-    // $('.read_highlights_wrap').css('bottom', ($('footer').innerHeight() - 20) + 'px');
+    $('.read_highlights_wrap').css('bottom', ($('footer').innerHeight() - 20) + 'px');
     // ------------ reading page --------------
     if (win.innerWidth() <= 768) {
         $('.img_box').css('height', '100%');
@@ -672,7 +670,7 @@ function doWindowResize() {
             if (parseInt($('.act_head_group').css('margin-top'))) {
                 actHeadermargin = parseInt($('.act_head_group').css('margin-top'));
             }
-            $('.cont_ht_sf').css('height', (contentHeight - subFooterHeight - actHeaderHeight - actHeadermargin - 90) + 'px');
+            $('.cont_ht_sf').css('height', (contentHeight - subFooterHeight - actHeaderHeight - actHeadermargin - 30) + 'px');
         }
         /*if ($cw.hasClass('activity_wrap')) {
             if ($('.activity_area').data('type') == 'linedraw') {
@@ -701,8 +699,8 @@ function doWindowResize() {
     //-------------
     if (isMobile()) maskWidth = 0;
     if ($('.mask_parent').length > 0) {
-        $('.mask_left').css('width', maskWidth);
-        $('.mask_right').css('width', maskWidth);
+        // $('.mask_left').css('width', maskWidth);
+        // $('.mask_right').css('width', maskWidth);
 
         $('.rotator').css('right', (Number(maskWidth.slice(0, -2)) - 15).toString() + 'px');
     }

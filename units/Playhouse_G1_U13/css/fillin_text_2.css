@@ -14,7 +14,7 @@
     margin: 0px auto;
     align-items: center;
     flex-direction: unset;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 :root {
@@ -30,8 +30,8 @@
 }
 
 .ques{
-    width: 650px;
-    height: 300px;
+    width: 550px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content:  space-evenly;
@@ -141,7 +141,7 @@
 
 /* ====================================== */
 .pulse {
-    animation: pulse 1s infinite ease-in-out alternate;
+    /* animation: pulse 1s infinite ease-in-out alternate; */
   }
   @keyframes pulse {
     from { transform: scale(0.94); }

@@ -14,6 +14,16 @@ var _activityData = {
       },
       //Draw
       {
+         "file"               : "drawwrite.html",
+         'type'               : 'drawwrite',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
          "file"               : "fillin_text.html",
          'type'               : 'fillin',
          'subtype'            : '',
