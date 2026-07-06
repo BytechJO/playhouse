@@ -1,0 +1,59 @@
+.grid_columns_container {
+    position: relative;
+}
+
+.snap_group_all {
+    width: 100%;
+    position: absolute;
+    top: 22px;
+}
+
+.ss_text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.red_text {
+    color: red;
+}
+
+.snap_card {
+    /* margin-left: 0px !important; */
+    line-height: 37px;
+}
+
+/* ===================================== */
+.textImg {
+    width: 1065px;
+    height: 490px;
+    box-shadow: 9px 9px 10px #ccc;
+    border-radius: 20px;
+    display: inline-block !important;
+}
+
+.textImg .snap_group_all {
+    width: 70%;
+    padding: 20px;
+    padding-left: 17px;
+    z-index: 100;
+}
+
+.textImg .ss_text {
+    font-size: 28px;
+}
+
+.textImg .audioIcon {
+    margin-left: 0px !important;
+}
+
+.textImg .text_img {
+    position: absolute;
+    top: 123px;
+    right: 14px;
+    height: 247px;
+    /* z-index: -100; */
+}
+/* ///////////////////////////////////////////////// */
+.textImg .ss_text {
+    opacity: 0.5;
+}

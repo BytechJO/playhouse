@@ -1,0 +1,90 @@
+body {
+    /* background: linear-gradient(#f2a9b69e, #F6F8F9) !important; */
+    /* background-image: url("../images/pages/reading/ARC_4_SB_U2_P21.png"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.mainTitleIcon {
+    top: -15px;
+    right: 100px;
+}
+
+.blue_text {
+    color: rgb(0, 190, 255);
+}
+
+.image_audio {
+    position: absolute;
+    transform: scale(0.6);
+}
+
+
+/* 
+move to : text_on_image
+
+.main_image {}
+
+.image_with_text{}
+
+.main_image img {} 
+
+.read_grammer .grammer_container {}
+
+.read_grammer .grammer_container img {}
+
+.read_grammer .words_container {}
+
+.read_grammer {}
+
+.song_text {} 
+*/
+
+.audioIcon {
+    /* all: unset; */
+}
+
+.audioIcon {
+    cursor: pointer;
+}
+
+.audioIcon:hover {
+    transform: scale(1.1);
+}
+
+
+/* ///////////////////////////////////////// */
+
+/* 
+Move to :  multible_flex_containers
+
+.multible_boxes_container {}
+.word_with_image {}
+.word_with_image .audioIcon {}
+.box_container {}
+.box_image {}
+.box_word {} 
+*/
+/* ///////////////////////////////////////// */
+
+/* 
+Move to : multible_flex_containers_with_list.css
+
+.boxe_list_container {}
+.list_container {}
+.list_under_image {}
+.box_with_list_image {} */
+
+
+
+/* ////////////////////////////////// */
+
+/* 
+Move to : grid_columns.css
+.grid_columns_container {}
+.snap_group_all {}
+.ss_text {}
+.red_text {} 
+*/
+
+/* ///////////////////////////////////// */

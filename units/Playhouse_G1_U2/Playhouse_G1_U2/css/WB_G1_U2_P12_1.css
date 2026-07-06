@@ -1,0 +1,58 @@
+.all_cont{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.screen_elements{
+    width: 80%;
+}
+
+.group_elm{
+    width: 100%;
+}
+
+.image_space {
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+    border: 2px solid #36a0c7;
+}
+  
+.image_space img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.txt-audioIcon{
+    width: 500px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    padding: 10px 15px;
+}
+
+.func_ctrls{
+    display: none !important;
+}
+/* ************************************************* */
+/* ************************************************* */
+@media (max-width: 991.98px) {
+    .fill_in .que {
+        width: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fill_in .que {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475.98px) {
+    /* .fill_in .que {
+        width: 200px;
+    } */
+}

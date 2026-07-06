@@ -1,0 +1,186 @@
+.title_text {
+    color: white;
+    font-size: 55px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.image_with_text {
+    /* margin-top: 135px;
+    margin-left: 15px; */
+    position: relative;
+    width: fit-content;
+}
+.image_floating_right {   /*have also one in multible imageswith text*/
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    border-radius: 25px;
+    width: 215px;
+}
+/* almost is repeted in another slids ==================*/
+.main_image {
+    /* height: calc(100vh - 375px); */
+    height: 590px;
+    width: 1110px;
+}
+
+.main_image_background {
+    width: 100%;
+    height: 100%;
+}
+/* ===================================================== */
+
+.title_image {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+.title_right_image_background {
+    height: 150px;
+    position: absolute;
+    top: -39px;
+    right: 37px;
+}
+.title_image_background {
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: -26px;
+}
+
+.slide_12 .title_image_background {
+    height: 70px;
+}
+
+.song_text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.image_audio {
+    position: absolute;
+    /* width: 90%; */
+    padding-right: 40px;
+}
+
+.image_audio .snap_card:hover {
+    transform: scale(1);
+}
+
+
+/* Slide 13 ======================================================== */
+
+.adventures_text_under_title .image_floating_right {
+    position: absolute;
+    left: 29px;
+    top: 1px;
+    border-radius: 25px;
+    width: 267px;
+    z-index: 50;
+}
+
+.adventures_text_under_title .title_image {
+    position: absolute;
+    top: 0px;
+    left: 296px;
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+.adventures_text_under_title .image_audio {
+    width: 60%;
+}
+
+.adventures_image_under_question .title_image {
+    top: 79px;
+    left: 124px;
+}
+
+.adventures_image_under_question .image_floating_right {
+    right: 342px;
+    top: 269px;
+    width: 343px;
+}
+
+.adventures_image_under_question .song_text {
+    font-size: 25px;
+}
+
+.title_text_container {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: rgb(0,131,190);
+    height: 90px;
+    width: 100%;
+}
+
+.title_text_container .audioIcon {
+    margin: auto;
+}
+
+/* ========================================= */
+
+.adventures_full_text .main_image {
+    background-color: #ffecdf;
+    /* border-radius: 298px; */
+    border: 4px solid #f89f6d;
+    /* background-image: url(../images/pages/news-letter/news-background-1.png); */
+}
+.adventures_full_text .song_text {
+    font-size: 27px;
+    /* color: #fff; */
+    width: 900px;
+    font-weight: normal;
+}
+/* ========================================  */
+.adventures_text_under_title .main_image {
+    background-color: #ede7f3;
+}
+.adventures_text_under_title .title_text_container {
+    background-color: #8e53a1;
+}
+.adventures_text_under_title .image_floating_right {
+    top: 50px;
+    border-radius: 0;
+    width: 304px;
+}
+.orange_text {
+    color: #f26521;
+}
+/* ==================================== */
+.img-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px dotted #fff;
+    right: 79px;
+    top: -40px;
+    object-fit: cover;
+}
+/* =================================== */
+.reading_conv {
+    line-height: 60px;
+
+}
+
+.reading_conv .slide_img {
+    /* height: 400px;  */
+    width: 509px;
+    top: 59px;
+    right: 40px;
+}
+
+.reading_conv .image_audio {
+    top: 97px !important;
+}
+
+.reading_conv .song_text {
+    font-size: 32px;
+    font-weight: lighter;
+}

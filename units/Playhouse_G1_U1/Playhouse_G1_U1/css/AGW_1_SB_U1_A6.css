@@ -1,0 +1,170 @@
+
+.activity_container {
+    margin-top: 0;
+}
+.activity-content {
+    margin-top: 5vh;
+    margin-left: auto;
+}
+.drag_drop_options{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width:max-content;
+    display: flex;
+	align-items:center;
+    margin: auto;
+    padding: 8px;
+    border: 2px solid #ebbbc8;
+    border-radius: 14px;
+    background: none;
+    box-shadow: none;
+    min-width:50px;
+    min-height:25px;
+    flex-wrap: wrap;
+    background-color: white;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 5px !important;
+    z-index: 5;
+}
+.drag_drop_questions ul{
+        /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width:max-content;
+    text-align: left;
+}
+.drag_drop_questions ul ul {
+    text-align: left;
+    margin-left: 0;
+}
+/*.img_holder{ 
+    
+}*/
+.imgAudio{
+    width: intrinsic;
+width: -moz-max-content;
+width: -webkit-max-content;
+width:max-content;
+    position:relative;
+    margin: auto;
+}
+.correctAnsAudio{
+    position: absolute;
+    left: -40px;
+    top: 13px;
+}
+.qTx{
+    background-color: #52a4c2;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 4px #D1D2D4;
+}
+.qline_2 .qTx {   
+    background-color:#be595b;
+}
+.qline_3 .qTx {   
+    background-color:#8bad3e
+}
+.drag_drop_activity ul > li {   
+    margin: 10px;
+}
+.drag_drop_activity input[type="text"]{
+width: 110px;
+    background-color: #F7F5F0;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    /* margin-top: 30px; */
+    color: black !important;
+	
+}
+.img_space{
+    margin: auto;    
+   padding: 8px;
+    height: 14vh;
+	max-height:250px;
+    width: intrinsic;
+width: -moz-max-content;
+width: -webkit-max-content;
+width:max-content;
+}
+.img_space img{
+    height: 100%;
+    width: auto;
+}
+
+
+
+    /**End**/
+  
+  /* ====================================================== */
+  /*              Media Queries Start                       */
+  /* ====================================================== */
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1799.98px */
+  /* ------------------------------------------------*/ 
+  /* // Large devices (desktops, less than 1800px) */   
+  @media (max-width: 1799.98px) {      
+    
+   }
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1399.98px */
+  /* ------------------------------------------------*/    
+  @media (max-width: 1399.98px) {    
+   .activity-content {
+    margin-top: 0;
+    }
+  
+  }
+   
+    /* ------------------------------------------------ */
+    /*              M Q max-width: 1199.98px */
+    /* ------------------------------------------------*/
+    /* // Large devices (desktops, less than 1200px) */
+    @media (max-width: 1199.98px) {
+     
+        
+    }
+    /* ------------------------------------------------ */
+    /*              M Q max-width: 991.98px */
+    /* ------------------------------------------------*/
+    /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+    @media (max-width: 991.98px) {    
+    }
+    /* ------------------------------------------------ */
+    /* M Q max-width: 767.98px */
+    /* ------------------------------------------------*/
+    /* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+    @media (max-width: 767.98px) {
+        .drag_drop_questions ul ul {
+            width: 100%;
+        }
+        .drag_drop_questions ul{
+            width: 100%;
+        }
+    }
+    /* ------------------------------------------------ */
+    /* M Q max-width: 575.98px */
+    /* ------------------------------------------------*/
+    /* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+    @media (max-width: 575.98px) {
+       
+    }
+    /* ------------------------------------------------ */
+    /*              M Q max-width: 475.98px             */
+    /* ------------------------------------------------*/
+    /* body working fine 320 to 475 */
+    @media (max-width: 475.98px) {  
+       
+    
+    }
+  

@@ -1,0 +1,201 @@
+body {    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
+}
+.options{
+    position: relative;
+}
+
+.txtHolder {       
+    width:205px;
+    padding-left: 73px;    
+}
+.drag .txtHolder {   
+    width: 200px;
+}
+.drop .txtHolder{
+    padding:13px;
+}
+/* .drag .imgHolder,
+.drop .txtHolder{
+    border-radius:15px;
+    border: 1px solid lightblue;
+    overflow: hidden;
+} */
+.dragcont, .drop .txtHolder {
+   height: 100%;
+    border-radius: 15px;
+    border: 1px solid #7b6a5f;
+}
+.imgHolder {
+    height: 135px;
+    margin-top: 0;
+    width: 116px;
+    /* border-right: 1px solid #848181; */
+    overflow: hidden;
+}
+.imgHolder img {
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+.node {
+    position: relative;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 50px;
+    cursor:pointer;
+    background-color: #5d5d5d;    
+    border: 3px solid transparent;
+}
+.drop_grp{
+    position: relative;
+}
+.icon_wrap_holder{
+    position: absolute;
+    right: -14px;
+    top: -9px;
+}
+.droppers{   
+   margin-left: 100px;
+}
+.drag {
+    height: 117px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.drop{
+    margin: 15px 0 15px ;    
+        height: 118px;
+    
+}
+
+.imgHolder{
+    height: 80%;
+    margin-top: 5px;   
+}
+.imgHolder img{
+    height:100%;
+    display: flex;
+    margin: auto;
+}
+
+.line{
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:10px;
+    border:1px solid blue;
+    background-color:blue;
+
+}
+.tick, .cross {
+    width: 25px;
+    height: 25px;
+}
+
+.imgHolder{
+    height: 77px;
+    margin-top: 8;
+    width: 120px;
+    /* border-right: 1px solid #848181; */
+    overflow: hidden;
+}
+.imgHolder img{
+    height:100%;
+    display: flex;
+    margin: auto;
+}
+/**End**/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1799.98px */
+/* ------------------------------------------------*/ 
+
+/* // Large devices (desktops, less than 1800px) */   
+@media (max-width: 1799.98px) {      
+   
+    
+   }
+/* ------------------------------------------------ */
+/*              M Q max-width: 1399.98px */
+/* ------------------------------------------------*/    
+
+@media (max-width: 1399.98px) {    
+    .drag {
+        height: 118px;
+    }
+}
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1199.98px */
+  /* ------------------------------------------------*/
+  /* // Large devices (desktops, less than 1200px) */
+  @media (max-width: 1199.98px) {
+   
+      
+  }
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {   
+  
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 767.98px) {
+    .drag .txtHolder {
+        width: auto;
+    }
+    .imgHolder {
+        /* height: 78px;        */
+        /* width: 72px;         */
+    }
+    .txtHolder {
+        width:135px;          
+    }
+    .drop {
+       
+        height: 140px;
+    }
+    .droppers {
+        margin-left: 40px;
+    }
+	.txtHolder {
+    
+    padding-left: 10px;
+}
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+@media (max-width: 575.98px) {
+    
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+/* body working fine 320 to 475 */
+@media (max-width: 475.98px) {  
+    
+  
+}
+@media (max-width: 332.98) {  
+   
+}

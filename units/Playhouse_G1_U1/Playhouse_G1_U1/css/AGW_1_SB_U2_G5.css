@@ -1,0 +1,94 @@
+.mcq_1_5_q_group{
+    border: 2px solid rgb(231, 231, 231);    
+  }
+  .selectedDefault{
+    border-color: rgb(13, 137, 202);
+  }
+
+  .mcq_1_5_q_group{
+    margin: 33px;
+    text-align: center;    
+    width: 19vw;
+    min-width: 218px;
+    padding: 10px;
+    overflow: hidden;
+    position:relative;
+    max-width: 300px;   
+  }  
+  .sub_title, .txt_box{
+    text-align: left;
+    font-family: Arcon;
+    /* font-size: 28px;   */
+  }
+  .sub_title{
+    color: #d02426;
+    margin-left: 60px;
+  }
+  .txt_box{
+    min-height: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .activityHeading{
+    font-family: arcon;
+
+
+  }
+  .selX{  
+    height: 30vh;
+  }
+  /**End**/
+  
+  /* ====================================================== */
+  /*              Media Queries Start                       */
+  /* ====================================================== */
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1199.98px */
+  /* ------------------------------------------------*/
+  @media (max-width: 1199.98px) {  
+   
+  }
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 991.98px */
+  /* ------------------------------------------------*/
+  /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+  @media (max-width: 991.98px) {   
+   
+  }
+  /* ------------------------------------------------ */
+  /* M Q max-width: 767.98px */
+  /* ------------------------------------------------*/
+  @media (max-width: 767.98px) {     
+    .mcq_1_5_q_group {
+      margin: 13px;
+    }
+   
+  }
+  /* ------------------------------------------------ */
+  /* M Q max-width: 575.98px */
+  /* ------------------------------------------------*/
+  @media (max-width: 575.98px) {  
+    .mcq_1_5_q_group {
+      margin: 10px;
+      width: 30%;
+    }
+     
+   
+  }
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 475.98px             */
+  /* ------------------------------------------------*/
+  @media (max-width: 475.98px) {    
+    .mcq_1_5_q_group {
+      min-width: 55%;
+      padding: 20px;
+      height: intrinsic;
+height: -moz-max-content;
+height: -webkit-max-content;
+height: max-content; 
+    }
+  }
+  @media (max-width: 320px) {  
+  
+  }
+  

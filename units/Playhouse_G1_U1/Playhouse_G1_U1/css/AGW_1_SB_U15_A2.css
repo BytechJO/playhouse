@@ -1,0 +1,120 @@
+/* .activity_area{
+    border: 1px solid red;
+}
+.activity_wrap{
+    border: 1px solid green;
+} */
+
+.bottom-sentence {
+    margin-top: 50px;
+}
+
+.txt_box input[type=text] {
+    width: 200px;
+    color: rgb(0, 0, 0);
+	 background-color: #F7F5F0;
+	 border: none;
+	 border-radius:10px;
+	 border-bottom:2px solid black;
+	 margin: 10px;
+	 text-align: center;
+}
+
+.f_i_t_2_q_group{
+    margin:0 20px;
+}
+.activityHeading{
+    font-family: Arcon;
+}
+/*.options{
+    height:300px !important;
+}*/
+.font_coming .text-bold{
+    font-weight: bold;
+}
+.fill-group{
+    width: auto;
+}
+
+
+.img_box1 {
+    height: 23vh;
+    max-height: 268px;
+    margin: auto;
+    text-align: center;   
+}
+.img_box1 img{
+    height: 80%;
+    max-height: 246px;
+    max-width: auto;
+}
+.icon_wrap_holder{
+    position: absolute;
+    right: 18%;
+    z-index: 2;
+}
+.all_ele_group{
+    position: relative;
+}
+/**End**/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+@media (max-width: 1199.98px) {  
+ 
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {    
+      
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+@media (max-width: 767.98px) {
+    .fill-group{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+  
+    
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+@media (max-width: 575.98px) {  
+    
+
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+@media (max-width: 475.98px) {   
+    .img_box1 {
+        height: 20vh;
+        /* width: 80%; */
+    }
+    .img_box1 img{
+        height: 100%;
+        max-height:fit-content;
+        /* width: 100%; */
+    }
+    
+    .txt_box input[type=text] {
+        width: 80%;
+    }
+    .tick, .cross{
+        width: 35px;
+    }
+}
+@media (max-width: 320px) {
+    
+
+}

@@ -1,0 +1,136 @@
+.que{
+  padding:6px;
+  margin:10px 2px;
+  border:1px solid #ececec;
+  border-radius:5px;
+  position: relative;
+  padding-right: 40px;
+}
+.q_part{    
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+ 
+}
+.q_num_space{
+  width:27px;
+}
+.all_picks{
+  width:100%;
+}
+.picks_grp{
+  margin-top:10px;
+  margin-bottom:10px;
+   margin-left: 24px;
+}
+.pick{
+  width: 180px;
+  margin: 2px;
+  text-align: center;
+  min-width: 150px;    
+  border: 2px solid rgb(231, 231, 231)
+}
+.roundedCorners {
+  border-radius: 10px;
+}
+.icon_wrap{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.tick, 
+.cross{
+  width: 25px;
+  height: 25px;
+}
+.tick_group {
+  margin: 0 8px;
+}
+.text_input_area{
+  text-align:center;
+  width:150px;    
+  background-color: #F7F5F0;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid black;    
+}
+.img_space{
+  height:30vh;
+  margin:5px 20px;
+}
+.img_space img{
+  height:100%;
+}
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1799.98px */
+  /* ------------------------------------------------*/
+  /* // Large devices (desktops, less than 1800px) */
+  @media (max-width: 1799.98px) {    
+    .img_space{
+      height:40vh;
+     
+    }
+  
+  }
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1399.98px */
+  /* ------------------------------------------------*/
+  /* // Large devices (desktops, less than 1400px) */
+  @media (max-width: 1399.98px) {
+    /*  .que {
+      padding: 4px;
+  }*/
+  .q_part {        
+      margin-bottom: 0px;
+  }
+}
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1199.98px */
+  /* ------------------------------------------------*/
+  /* // Large devices (desktops, less than 1200px) */
+  @media (max-width: 1199.98px) {
+  
+  
+  }
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 991.98px */
+  /* ------------------------------------------------*/
+  /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+  @media (max-width: 991.98px) {    
+  
+  }
+  /* ------------------------------------------------ */
+  /* M Q max-width: 767.98px */
+  /* ------------------------------------------------*/
+  /* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+  @media (max-width: 767.98px) {
+  .pick {
+    margin-left: auto
+  }
+  }
+  /* ------------------------------------------------ */
+  /* M Q max-width: 575.98px */
+  /* ------------------------------------------------*/
+  /* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+  @media (max-width: 575.98px) {
+      .img_space {
+          width:100%;
+          height:auto;
+      }
+      .img_space img{
+          width:100%;
+          height:auto;
+      }
+ 
+  }
+  
+/* body working fine 320 to 475 */
+@media (max-width: 475.98px) {  
+    .tickBox {
+      height: 36px;
+      width: 36px;     
+      min-width: 36px;
+    }
+  }

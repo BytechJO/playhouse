@@ -1,0 +1,61 @@
+/* =========================================
+   OpenWrite Activity CSS
+   ========================================= */
+
+.ow_lines_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+/* --- كل سطر --- */
+.ow_line {
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    border-bottom: 1.5px solid #7bbbd4;
+    padding-bottom: 4px;
+}
+
+/* --- النص الثابت --- */
+.ow_prefix {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    font-size: 20px;
+    color: #4db8e8;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    flex-shrink: 0;
+    padding-bottom: 2px;
+}
+
+/* --- الـ input --- */
+.ow_input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    font-size: 20px;
+    color: #1a3a5c;
+    letter-spacing: 1px;
+    padding: 0 8px;
+    min-width: 0;
+}
+
+/* --- subtitle icon (الشخصية) --- */
+.subtitle_icon {
+    height: 36px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+    .ow_prefix { font-size: 15px; }
+    .ow_input  { font-size: 15px; }
+    .ow_lines_wrap { gap: 20px; }
+}

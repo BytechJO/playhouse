@@ -1,0 +1,41 @@
+.all_cont {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.screen_elements {
+    width: 80%;
+}
+
+.group_elm {
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+.image_space {
+    width: 320x;
+    height: 490px;
+}
+
+.image_space img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.func_ctrls {
+    display: none !important;
+}
+
+
+/* ************************************************* */
+/* ************************************************* */
+@media (max-width: 991.98px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 475.98px) {}

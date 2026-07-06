@@ -1,0 +1,37 @@
+.w-100{
+    width: 100% !important;
+  }
+  .width-fit{
+    width: fit-content !important;
+}
+.w-80{
+    width: 80% !important;
+}
+.margin-auto{
+    margin: auto;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.img_space img{
+    width: 200px !important;
+    border-radius: 20px;
+}
+.gap-50{
+    gap: 50px;
+}
+.ml-90{
+margin-left: 90px ;
+}
+.input-line{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid !important;
+    border-radius: 0 !important;
+}
+    .input-line:focus-visible{
+        box-shadow: none;
+         outline: none;
+
+    }

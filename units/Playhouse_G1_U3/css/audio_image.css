@@ -1,0 +1,50 @@
+.all_cont {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.screen_elements {
+    width: 90%;
+    height: 100%;
+}
+
+.group_elm {
+    width: 100%;
+    height: 100%;
+}
+
+
+.func_ctrls {
+    display: none !important;
+}
+
+
+
+
+.q_images_container .q_img .img-1{
+    position: relative;
+}
+
+.audio_img {
+    transform: scale(0.8);
+}
+
+.audio_img-0 {
+    position: absolute;
+}
+
+
+
+/* ************************************************* */
+/* ************************************************* */
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 475.98px) {
+}

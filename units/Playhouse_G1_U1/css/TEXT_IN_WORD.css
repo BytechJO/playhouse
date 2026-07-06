@@ -1,0 +1,173 @@
+.mainTitleIcon {
+  /* top: -15px; */
+  right: -15px;
+}
+
+.page_sub_title img {
+  height: 60px;
+}
+
+.page_sub_title p {
+  margin: auto;
+}
+
+.image_space {
+  height: 160px;
+  text-align: center;
+}
+.image_space img {
+  height: 100px;
+  width: auto;
+}
+.fillin_set {
+}
+
+.audio_icon {
+  height: 39px;
+  padding: 1px;
+}
+
+.screan_elements {
+  width: 90%;
+}
+
+.all_cont {
+  /* height: 100%; */
+  /* margin-bottom: 150px!important; */
+  align-items: center;
+}
+
+.options {
+  /* height: 450px; */
+}
+.fillin_gr input {
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 1px;
+  text-align: center;
+  height: 39px;
+  /* margin: 0 10px; */
+}
+
+.top_image {
+
+}
+
+.fillin_gr input:focus {
+  outline: none;
+}
+
+.group_elm {
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+.img_fillin_gr {
+  /* border: 1px solid rgb(39, 150, 166); */
+  /* border-radius: 20px; */
+  /* margin: 10px; */
+  width: 415px;
+  /* box-shadow: 0px 0px 50px -13px rgb(39, 150, 166); */
+  position: relative;
+  /* height: 75px; */
+}
+/* .fillin_gr .icon_wrap_holder {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+} */
+.fillin_gr {
+  /* width: 100%; */
+  /* position: absolute; */
+  /* bottom: 20px; */
+}
+
+.q_num_space {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background-color: #99e1f9;
+  border: 2px solid blue;
+  border-radius: 50%;
+  color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tick,
+.cross {
+  width: 32px;
+  height: 32px;
+}
+.clue_word {
+  margin: 15px;
+}
+.word_options {
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 8vh;
+  background-color: white;
+}
+.word_opt_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+/**** popup window ***/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1799.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1800px) */
+@media (max-width: 1799.98px) {
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 1399.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .word_options {
+    margin-bottom: 1vh;
+  }
+  .img_fillin_gr {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 767.98px) {
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+@media (max-width: 575.98px) {
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+/* body working fine 320 to 475 */
+@media (max-width: 475.98px) {
+}

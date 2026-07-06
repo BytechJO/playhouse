@@ -1,0 +1,237 @@
+.all_cont {
+  height: 100%;
+  width: 100%;
+  display: flex !important;
+  justify-content: flex-start !important;
+}
+
+.options {
+  width: 90%;
+}
+
+.audio_icon {
+  height: 39px;
+  padding: 1px;
+}
+
+.screen_elements{
+  width: 100% ;
+}
+
+.grou_elm{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.subTitleTextRight b{
+  color: red;
+}
+
+[class^="group"] {
+  width: 500px;
+  padding: 25px 15px;
+  border-radius: 20px;
+  margin-top: 45px ;
+  border: 2px solid rgb(0, 190, 255);
+  position: relative;
+}
+
+.group1 {
+  /* background: #fdebf3; */
+  /* border: 4px dashed #f49ac1; */
+}
+
+.group2 {
+  /* background: #f2fbff; */
+  /* border: 4px dashed #93dbf8; */
+}
+
+.txt-audioIcon{
+  width: 50px;
+}
+
+.fillin_gr input {
+  width: 300px;
+  /* flex: 1; */
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 1px;
+  text-align: center;
+  height: 31px;
+  margin: 0 10px;
+}
+
+.fillin_gr input:focus {
+  outline: none;
+}
+
+.img_fillin_gr {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 25px;
+  height: 66px;
+}
+
+.fillin_set * {
+  display: inline-block;
+}
+
+.q_space ,.fillin_set{
+  width: 100%;
+}
+
+/* .que:nth-child(-1n + 3) {
+  background: #f00;
+} */
+
+.title {
+  border: 1px solid #00aeef;
+  position: absolute;
+  top: -27px;
+  left: 140px;
+  padding: 0px 20px;
+  /* display: block; */
+  font-size: 28px;
+  width: fit-content;
+  margin: 0px auto;
+  border-radius: 30px;
+  color: #d2232a;
+  background-color: #fff;
+  font-weight: bolder;
+}
+
+.grp_image {
+  position: absolute;
+  top: -103px;
+  left: 200px;
+  padding: 0px 20px;
+  height: 100px;
+}
+
+.fillin_img{
+  height: 60px;
+  float: right;
+}
+
+.tick,
+.cross {
+  width: 32px;
+  height: 32px;
+}
+
+.clue_word {
+  /* margin: 15px; */
+  width: 530px;
+}
+
+.word_options {
+  width: 93%;
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  margin: 20px 0px;
+  background-color: white;
+}
+
+.word_opt_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.nextNav {
+  right: 0;
+}
+
+.backNav {
+  left: 0;
+}
+
+.images{
+  height: 200px;
+}
+
+.image-container{
+  width: 130px;
+  right: 120px;
+  bottom: 20px;
+}
+.image-container img{
+  width: 100%;
+  margin: 4px;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.icon_wrap_holder{
+  position: absolute;
+  right: 10px;
+}
+
+.textEnd{
+  text-align: start;
+}
+
+.red ,.blue {
+  font-weight: bold;
+}
+
+
+/**** popup window ***/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1799.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1800px) */
+@media (max-width: 1799.98px) {}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 1399.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .word_options {
+    margin-bottom: 1vh;
+  }
+
+  .img_fillin_gr {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 767.98px) {}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+@media (max-width: 575.98px) {}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+/* body working fine 320 to 475 */
+@media (max-width: 475.98px) {}

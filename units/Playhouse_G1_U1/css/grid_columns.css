@@ -1,0 +1,18 @@
+.grid_columns_container {
+    position: relative;
+}
+
+.snap_group_all {
+    width: 100%;
+    position: absolute;
+}
+
+.ss_text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.red_text {
+    color: red;
+}
+

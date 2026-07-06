@@ -1,0 +1,42 @@
+.image_with_text {
+    /* margin-top: 135px; */
+    /* margin-left: 15px; */
+    position: relative;
+    width: fit-content;
+}
+.main_image {
+    /* height: calc(100vh - 375px); */
+    height: 350px;
+    /* width: 1315px; */
+}
+.main_image_background {
+    width: 100%;
+    height: 100%;
+}
+/* ============================= */
+.title_text {
+    position: absolute;
+    top: 85px;
+    left: 400px;
+    font-weight: bold;
+    color: deepskyblue;
+}
+.image_audio {
+    position: absolute;
+    width: 35%;
+}
+
+.image_audio .snap_card:hover { 
+    transform: scale(1);
+}
+.song_text {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 46px;
+}
+.start_text{
+    position: absolute;
+    left: 150px;
+    top: -40px;
+}

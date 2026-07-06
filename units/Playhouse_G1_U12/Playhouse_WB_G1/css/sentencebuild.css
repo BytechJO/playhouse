@@ -1,0 +1,155 @@
+.all_cont{
+    /* height: 100%; */
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.screen_elements{
+    width: 90%;
+    height: 100%;
+}
+
+.sentencebuild_group{
+    width: 95%;
+    max-width: 900px;
+    display: flex;
+        gap:10px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.activityHeading b {
+    color: #000;
+}
+
+.blue_text {
+    color: rgb(0, 185, 242);
+    font-size: 27px;
+}
+
+.q_num_space{
+    width: 40px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* ---- each sentence block ---- */
+.sentence_gr{
+    width: 100%;
+    text-align: left;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.sentence_row{
+    width: 100%;
+    position: relative;
+}
+
+.sentence_text{
+    font-family: Arcon;
+    color: black;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+/* ---- tick / cross buttons ---- */
+.markBtns{
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.tickBtn,
+.crossBtn{
+    width: 40px;
+    height: 40px;
+    margin: 0 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.55;
+    transition: all 0.15s ease-in-out;
+}
+
+.tickBtn img,
+.crossBtn img{
+    width: 60%;
+}
+
+.tickBtn.active{
+    border-color: #35a044;
+    background: rgba(53,160,68,0.15);
+    opacity: 1;
+}
+
+.crossBtn.active{
+    border-color: #d9364a;
+    background: rgba(217,54,74,0.15);
+    opacity: 1;
+}
+
+/* ---- correction input row ---- */
+.correction_row{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+.correction_row input.correction_input{
+    width: 100%;
+    max-width: 600px;
+    height: 35px;
+    color: black;
+    font-family: Arcon;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid #595a5a;
+    background: transparent;
+}
+
+.correction_row input.correction_input:focus{
+    outline: none;
+}
+
+/* ---- feedback icons ---- */
+.icon_wrap_holder{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tick,
+.cross {
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+/* ************************************************* */
+@media (max-width: 991.98px) {
+    .icon_wrap_holder{
+        right: -35px;
+    }
+    .sentence_text{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sentence_text{
+        font-size: 17px;
+    }
+    .correction_row{
+        padding-left: 0;
+    }
+}

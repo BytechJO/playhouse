@@ -1,0 +1,135 @@
+/* =========================================
+   ColourImg Activity CSS
+   ========================================= */
+
+/* --- colour palette --- */
+.ci_palette_wrap {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 6px 0;
+}
+
+.ci_palette {
+    display: flex;
+    gap: 10px;
+    background: #f0f8ff;
+    border: 2px solid #b0cfe0;
+    border-radius: 30px;
+    padding: 8px 16px;
+    transition: transform 0.1s;
+}
+
+/* shake animation لو ما اختار لون */
+.ci_shake {
+    animation: ci_shake_anim 0.4s ease;
+}
+@keyframes ci_shake_anim {
+    0%, 100% { transform: translateX(0); }
+    25%       { transform: translateX(-6px); }
+    75%       { transform: translateX(6px); }
+}
+
+.ci_colour_swatch {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s, border-color 0.15s;
+}
+.ci_colour_swatch:hover {
+    transform: scale(1.15);
+}
+.ci_colour_swatch.ci_swatch_selected {
+    border-color: #1a3a5c;
+    transform: scale(1.2);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1a3a5c;
+}
+
+/* --- images grid --- */
+.ci_images_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 10px;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* --- كل صورة --- */
+.ci_item {
+    position: relative;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #b0cfe0;
+    background: #fff;
+    width: 120px;
+    transition: transform 0.15s, border-color 0.15s;
+    user-select: none;
+}
+.ci_item:hover {
+    transform: scale(1.04);
+    border-color: #1a7fc1;
+}
+.ci_item.ci_correct { border-color: #27ae60; }
+.ci_item.ci_wrong   { border-color: #e74c3c; }
+
+/* tick/cross */
+.ci_icon_wrap {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: none;
+    z-index: 5;
+}
+.ci_icon_wrap img { width: 24px; height: 24px; }
+.ci_tick, .ci_cross { display: none; }
+
+/* الصورة + overlay */
+.ci_img_container {
+    position: relative;
+    width: 100%;
+    padding-top: 85%; /* نسبة الصورة */
+}
+.ci_img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.ci_colour_overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: background-color 0.2s, opacity 0.2s;
+    mix-blend-mode: multiply; /* يخلي اللون يمزج مع الصورة */
+    pointer-events: none;
+}
+
+/* الليبل */
+.ci_label {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a3a5c;
+    padding: 5px 4px;
+    background: #f0f8ff;
+    border-top: 1px solid #b0cfe0;
+}
+
+/* audio */
+.ci_audio {
+    margin: 0 auto 4px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+    .ci_item      { width: 90px; }
+    .ci_images_wrap { gap: 10px; }
+    .ci_colour_swatch { width: 26px; height: 26px; }
+}
