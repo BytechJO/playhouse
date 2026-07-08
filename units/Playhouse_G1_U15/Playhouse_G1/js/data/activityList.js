@@ -101,7 +101,15 @@ var _activityData = {
          'visited'            : 0,
       },
       //circle with underline
-    
+        {
+      file: "circleunderline_word.html",
+      type: "circleunderline_word",
+      subtype: "",
+      build: "yes", // yes (or) no
+      activityCtrls: "yes",
+      layout: 3,
+      visited: 0,
+    },
    ]
 }
 

@@ -602,6 +602,14 @@ function setLoadedStatus(val) {
                 buildLetterPathBody(letterpath_data);
               }
               break;
+               case "circleunderline_word":
+              if (
+                typeof circleunderline_word_data != undefined &&
+                circleunderline_word_data != null
+              ) {
+                buildCircleUnderlineWordBody(circleunderline_word_data);
+              }
+              break;
             case "circleunderline":
               if (
                 typeof circleunderline_data != undefined &&
@@ -643,6 +651,7 @@ function setLoadedStatus(val) {
           case "dragndrop":
           case "coloring":
           case "circleunderline":
+          case "circleunderline_word":
             callActivityFunctions(
               _activityData,
               _actIndx,

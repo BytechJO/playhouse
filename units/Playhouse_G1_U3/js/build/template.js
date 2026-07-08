@@ -180,7 +180,7 @@ function buildFooter(aObj) {
     fStmt += "<div class='container footer_wrap'>";
     fStmt += "<div class='d-flex justify-content-between mt-2'>";
     fStmt +=
-      "<div class='d-flex col-3 col-xs-3 col-md-3 justify-content-between align-items-center'>";
+      "<div class='d-flex col-3 col-xs-3 col-md-3 gap-2 align-items-center'>";
     fStmt += '<a href="' + aObj.booksbutton.studentbook.link + '">';
     fStmt += '<img src="' + aObj.booksbutton.studentbook.icon + '">';
     fStmt += "</a>";

@@ -517,6 +517,16 @@ function setLoadedStatus(val) {
                                 buildLetterPathBody(letterpath_data);
                             }
                             break;
+                            case 'readcolour':
+                            if (typeof readcolour_data != undefined && readcolour_data != null) {
+                                buildReadColourBody(readcolour_data);
+                            }
+                            break;
+                            case 'paragraphdraw':
+                            if (typeof paragraphdraw_data != undefined && paragraphdraw_data != null) {
+                                buildParagraphDrawBody(paragraphdraw_data);
+                            }
+                            break;
                     }
                 } else {
                     // console.log('no build');
@@ -550,6 +560,8 @@ function setLoadedStatus(val) {
                     case 'linedraw':
                     case 'dragndrop':
                     case 'coloring':
+                    case 'paragraphdraw':
+                    case'readcolour':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
                     default:

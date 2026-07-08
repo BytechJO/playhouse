@@ -8,10 +8,13 @@ function buildMarkWordsBody(aObj) {
         htmlStmt += '<a href=""><img src="../images/icons/next_btn.png" /></a></div>';
 
         // ===== heading =====
-        htmlStmt += '<div class="act_head_group justify-content-center">';
-        htmlStmt += '<div class="audioIcon off contant" data-slideNum="1" data-audio="' + aObj.mainTitleAudio + '">';
-        htmlStmt += '<div class="q-type-img-container">';
-        htmlStmt += '</div></div>';
+   	htmlStmt += '<div class="act_head_group justify-content-center">';
+		htmlStmt += '<div class="audioIcon off contant " data-slideNum="' + 1 + '" data-audio="' + aObj.mainTitleAudio + '">';
+			htmlStmt += '<div class="q-type-img-container">';
+			htmlStmt += '<img class="mainTitle" src=' + aObj.mainTitle + ' />';
+			
+			htmlStmt += '</div>';
+		htmlStmt += '</div>';
 
         htmlStmt += '<div class="activityHeading">';
         htmlStmt += '<div class="audioIcon off contant audioQuestionTitle" data-slideNum="1" data-audio="' + aObj.subTitleAudio + '">';

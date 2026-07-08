@@ -74,7 +74,9 @@ function buildWriteboxBody(aObj) {
                                 : '';
 
                             htmlStmt += '<div class="wb_bubble" style="' + bgStyle + '">';
+                            htmlStmt += '<div class="wb_bubble-content">';
                             htmlStmt += buildTextWithInputs(bubble.text, qNum, inputCounter);
+                            htmlStmt += '</div>';
                             htmlStmt += '</div>';
 
                         htmlStmt += '</div>';

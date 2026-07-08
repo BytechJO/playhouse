@@ -88,6 +88,9 @@ body {
 
 .readHighlightsBtn {
   width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 20px;
   border-radius: 51%;
 }
@@ -600,7 +603,7 @@ body {
 
 .readHilightsPanel2_1 .readHilightsPanel_container {
   position: relative;
-  top: 100px;
+  /* top: 100px; */
   /* padding-left: 2rem; */
   /* width: 80%; */
   padding: 34px 46px;

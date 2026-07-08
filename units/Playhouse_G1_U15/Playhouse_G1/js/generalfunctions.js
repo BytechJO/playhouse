@@ -249,7 +249,7 @@ function playThisAudio(aAudioObj, aState) {
     aAudioObj.data("audio") != undefined && aAudioObj.data("audio") != null
       ? aAudioObj.data("audio")
       : "none";
-  if (_currFile == "snapshot.html") {
+  if (_currFile == "playhouse_intro.html") {
     if (typeof aState != undefined && aState != null) {
       if (aState == "new") {
         audioIndex = 0;
@@ -290,7 +290,7 @@ function playThisAudio(aAudioObj, aState) {
           aAudioObj.css(tmpCss[0], tmpCss[1]);
           // -- for all the child elements --
           if (aAudioObj[0].hasChildNodes()) {
-            if (_currFile == "snapshot.html") {
+            if (_currFile == "playhouse_intro.html") {
               aAudioObj
                 .find("span")
                 .eq(audioIndex)
@@ -471,7 +471,10 @@ function setLoadedStatus(val) {
   _loadingStatus = "no";
 
   if (_currDir == "views") {
-    if (_currFile != "reading.html" && _currFile != "snapshot.html") {
+    if (
+      !_currFile.startsWith("slide_") &&
+      _currFile != "playhouse_intro.html"
+    ) {
       _actIndx = getIndexOfFile(_currFile, _activityData.list, "file");
       if (_actIndx != -1) {
         _fileType = _activityData.list[_actIndx].type;
@@ -485,7 +488,10 @@ function setLoadedStatus(val) {
       }
       //console.log('_activityData >> ', _actIndx, _fileType, _fileBuild, _fileSubType);
     } else {
-      _fileType = _currFile == "reading.html" ? "reading" : "snapshot";
+      _actIndx = getIndexOfFile(_currFile, _activityData.list, "file");
+      _fileType = _currFile.startsWith("slide_")
+        ? "reading"
+        : "playhouse_intro";
     }
   }
   console.log(
@@ -515,19 +521,22 @@ function setLoadedStatus(val) {
       ) {
         buildWelcomeContent(welcome_data);
       }
-    } else if (_currFile == "snapshot.html") {
+    } else if (_currFile == "playhouse_intro.html") {
       if (
         typeof snapshot_data != undefined &&
         snapshot_data != null &&
         typeof snapshotPopup_data != undefined &&
         snapshotPopup_data != null
       ) {
-        buildSnapShotContent(snapshot_data, snapshotPopup_data);
+        buildSnapShotContent(snapshot_data, snapshotPopup_data, Popups_data);
+        callsnapshotfunctions(_activityData, _actIndx);
       }
-    } else if (_currFile == "reading.html") {
+    } else if (_currFile.startsWith("slide_images")) {
       if (typeof reading_data != undefined && reading_data != null) {
         buildReadingHTML(reading_data);
       }
+    } else if (_currFile.startsWith("slide_")) {
+      buildReadingHTML(reading_data);
     } else {
       if (_fileType != "" && _fileBuild != "") {
         if (_fileBuild == "yes") {
@@ -593,9 +602,20 @@ function setLoadedStatus(val) {
                 buildLetterPathBody(letterpath_data);
               }
               break;
-            case "drawqa":
-              if (typeof drawqa_data != undefined && drawqa_data != null) {
-                buildDrawQABody(drawqa_data);
+               case "circleunderline_word":
+              if (
+                typeof circleunderline_word_data != undefined &&
+                circleunderline_word_data != null
+              ) {
+                buildCircleUnderlineWordBody(circleunderline_word_data);
+              }
+              break;
+            case "circleunderline":
+              if (
+                typeof circleunderline_data != undefined &&
+                circleunderline_data != null
+              ) {
+                buildCircleUnderlineBody(circleunderline_data);
               }
               break;
           }
@@ -611,14 +631,17 @@ function setLoadedStatus(val) {
       audio(stereo_data);
     }
   } else if (val == _currFile) {
-    if (_currFile == "index.html" || _currFile == "snapshot.html") {
+    if (_currFile == "index.html" || _currFile == "playhouse_intro.html") {
       _loadingStatus = "loaded";
       doWindowResize();
     } else {
       if (_fileType != "") {
         switch (_fileType) {
           case "reading":
-            callReadingFunctions();
+            callReadingFunctions(_activityData, _actIndx);
+            break;
+          case "playhouse_intro":
+            callsnapshotfunctions(_activityData, _actIndx);
             break;
           case "fillin":
           case "mcq":
@@ -627,7 +650,8 @@ function setLoadedStatus(val) {
           case "linedraw":
           case "dragndrop":
           case "coloring":
-          case "drawqa":
+          case "circleunderline":
+          case "circleunderline_word":
             callActivityFunctions(
               _activityData,
               _actIndx,
@@ -739,10 +763,7 @@ function doWindowResize() {
     ($("header").innerHeight() + ($("footer").innerHeight() - 20));
   // ------------ welcome page --------------
   $(".wordsList_wrap").css("max-height", contentHeight / 2 + "px");
-  $(".read_highlights_wrap").css(
-    "bottom",
-    $("footer").innerHeight() - 20 + "px",
-  );
+  // $('.read_highlights_wrap').css('bottom', ($('footer').innerHeight() - 20) + 'px');
   // ------------ reading page --------------
   if (win.innerWidth() <= 768) {
     $(".img_box").css("height", "100%");
@@ -774,7 +795,7 @@ function doWindowResize() {
           subFooterHeight -
           actHeaderHeight -
           actHeadermargin -
-          30 +
+          90 +
           "px",
       );
     }

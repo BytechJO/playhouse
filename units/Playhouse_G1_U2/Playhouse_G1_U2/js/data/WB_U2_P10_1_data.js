@@ -25,7 +25,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='blue_text'>2</span> Write <b>my</b> or <b>your</b>.",
+    "subTitleTextLeft"      : "<span class='blue_text'>1</span> Write <b>my</b> or <b>your</b>.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",

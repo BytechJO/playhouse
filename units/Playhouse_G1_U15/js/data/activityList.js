@@ -136,5 +136,6 @@ var _activityData = {
       visited: 0,
       score: 0,
     },
+
   ],
 };

@@ -234,6 +234,8 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DrawWrite(quePart, drawwrite_data);
     } else if (aActTyp == 'circleunderline') {
         theActivity = new CircleUnderline(quePart, circleunderline_data);
+    } else if (aActTyp == 'circleunderline_word') {
+        theActivity = new CircleUnderlineWord(quePart, circleunderline_word_data);
     } 
      else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";

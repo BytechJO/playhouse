@@ -62,9 +62,21 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-         {
-         "file"               : "AGW_1_SB_U1_A7_colourimg.html",
-         'type'               : 'colourimg',
+      //    {
+      //    "file"               : "AGW_1_SB_U1_A7_colourimg.html",
+      //    'type'               : 'colourimg',
+      //    'subtype'            : '',
+      //    'build'              : 'yes', // yes (or) no   
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 2,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
+ 
+      //Draw
+        {
+         "file"               : "AGW_1_SB_U1_A8_drawwrite.html",
+         'type'               : 'drawwrite',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',
@@ -72,8 +84,6 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
- 
-      //Draw
       {
          "file"               : "fill_number_or_letter.html",
          'type'               : 'fillin',

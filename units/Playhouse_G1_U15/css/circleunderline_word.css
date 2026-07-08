@@ -1,0 +1,93 @@
+.all_cont{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.screen_elements{
+    width: 90%;
+    height: 100%;
+}
+
+.blue_text {
+    color: rgb(0, 185, 242);
+    font-size: 27px;
+}
+
+.cuw_group{
+    width: 95%;
+    max-width: 950px;
+    margin: 0 auto;
+    row-gap: 30px;
+}
+
+.cuw_item{
+    width: 50%;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.q_num_space{
+    width: 30px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.cuw_sentence{
+    flex: 1;
+    column-gap: 6px;
+}
+
+.cuw_wordWrap{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px 3px;
+}
+
+.cuw_word{
+    font-family: Arcon;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.cuw_svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.icon_wrap_holder{
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.tick,
+.cross{
+    width: 28px;
+}
+
+.tick img,
+.cross img{
+    width: 100%;
+}
+
+/* ************************************************* */
+@media (max-width: 767.98px){
+    .cuw_item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px){
+    .cuw_word{
+        font-size: 17px;
+    }
+}

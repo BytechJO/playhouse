@@ -1,13 +1,20 @@
 /* =========================================
    WriteBox Activity CSS
    ========================================= */
-
+.all_cont {
+  height: auto !important;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 .writebox_questions_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    /* flex-direction: column; */
-    /* gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-direction: column;
+  /* flex-direction: column; */
+  /* gap: 20px;
     width: 100%;
     max-width: 420px;
     margin: 0 auto;
@@ -16,106 +23,134 @@
 
 /* --- كل سؤال --- */
 .wb_question {
-    position: relative;
-    width: 550px;
+  position: relative;
+  width: 550px;
 }
 
 /* --- tick/cross --- */
 .wb_question .icon_wrap {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    display: none;
-    z-index: 10;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: none;
+  z-index: 10;
 }
-.wb_question .icon_wrap img { width: 26px; height: 26px; }
+.wb_question .icon_wrap img {
+  width: 26px;
+  height: 26px;
+}
 .wb_question .tick,
-.wb_question .cross { display: none; }
+.wb_question .cross {
+  display: none;
+}
 
 /* ==========================================
    الصورة الرئيسية + الـ bubbles فوقها
    ========================================== */
 .wb_image_wrap {
-    position: relative;
-    width: 100%;
-    border-radius: 14px;
-    /* overflow: hidden; */
-    border: 2px solid #b0cfe0;
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  /* overflow: hidden; */
+  border: 2px solid #b0cfe0;
 }
 
 .wb_main_img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 /* ==========================================
    bubble container - absolute فوق الصورة
    ========================================== */
 .wb_bubble_container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    z-index: 3;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 3;
 }
 
 /* ==========================================
    الشخصية
    ========================================== */
 .wb_character {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    border: 2px solid #b0cfe0;
-    background: #fff;
-    object-fit: cover;
-    flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid #b0cfe0;
+  background: #fff;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 /* ==========================================
    الـ speech bubble - background image
    ========================================== */
 .wb_bubble {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    padding: 10px 24px 33px 24px;  /* زيادة padding تحت */
-    font-size: 20px;
-    font-weight: 600;
-    color: #1a3a5c;
-    line-height: 1;              /* تصغير line-height */
-    white-space: nowrap;
-    min-width: 160px;
-    display: flex;
-    align-items: center;           /* توسيط النص عمودياً */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  /* padding: 10px 24px 33px 24px; */
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a3a5c;
+  line-height: 1;
+  white-space: nowrap;
+  /* min-width: 160px; */
+  display: flex;
+  height: 65px;
+  width: 250px;
+  justify-content: center;
+  align-items: center; /* توسيط النص عمودياً */
 }
 /* ==========================================
    الـ input
    ========================================== */
+.wb_bubble-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+}
 .wb_input {
-    border: none;
-    border-bottom: 2px solid #1a7fc1;
-    background: transparent;
-    outline: none;
-    width: 80px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #1a3a5c;
-    text-align: center;
-    /* height: 10px; */
-    padding: 0 2px;
-    margin: 0 3px;
-    transition: border-color 0.2s;
+  border: none;
+  border-bottom: 2px solid #1a7fc1;
+  background: transparent;
+  outline: none;
+  width: 80px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a3a5c;
+  text-align: center;
+  /* height: 10px; */
+  padding: 0 2px;
+  margin: 0 3px;
+  transition: border-color 0.2s;
 }
 
 /* ==========================================
    Responsive
    ========================================== */
 @media (max-width: 480px) {
-    .writebox_questions_wrap { max-width: 100%; }
-    .wb_bubble  { font-size: 11px; padding: 6px 14px; white-space: normal; min-width: 120px; }
-    .wb_input   { width: 60px; font-size: 11px; }
-    .wb_character { width: 42px; height: 42px; }
+  .writebox_questions_wrap {
+    max-width: 100%;
+  }
+  .wb_bubble {
+    font-size: 11px;
+    padding: 6px 14px;
+    white-space: normal;
+    min-width: 120px;
+  }
+  .wb_input {
+    width: 60px;
+    font-size: 11px;
+  }
+  .wb_character {
+    width: 42px;
+    height: 42px;
+  }
 }

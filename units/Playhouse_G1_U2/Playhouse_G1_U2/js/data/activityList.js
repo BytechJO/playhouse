@@ -61,6 +61,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+       {
+         "file"               : "AGW_1_SB_U1_A8_drawwrite.html",
+         'type'               : 'drawwrite',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       {
          'file'               : 'WB_U2_P13_1.html',
          'type'               : 'mcq',

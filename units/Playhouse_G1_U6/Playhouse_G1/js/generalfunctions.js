@@ -627,6 +627,14 @@ function setLoadedStatus(val) {
                 buildColourWordBody(colourword_data);
               }
               break;
+            case "drawwrite":
+              if (
+                typeof drawwrite_data != undefined &&
+                drawwrite_data != null
+              ) {
+                buildDrawWriteBody(drawwrite_data);
+              }
+              break;
             case "openwrite":
               if (
                 typeof openwrite_data != undefined &&
@@ -671,6 +679,7 @@ function setLoadedStatus(val) {
           case "wordsearch":
           case "linedraw":
           case "dragndrop":
+          case "drawwrite":
           case "coloring":
             callActivityFunctions(
               _activityData,

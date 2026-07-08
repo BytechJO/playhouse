@@ -277,7 +277,9 @@ function initiateActivityType(aActTyp, aActSubType) {
     theActivity = new OpenWrite(quePart, openwrite_data);
   } else if (aActTyp == "colourimg") {
     theActivity = new ColourImg(quePart, colourimg_data);
-  } else if (aActTyp == "standAlone") {
+  } else if (aActTyp == "drawwrite") {
+    theActivity = new DrawWrite(quePart, drawwrite_data);
+  }else if (aActTyp == "standAlone") {
     theActivity = "standAlone";
   } else {
     theActivity = null;

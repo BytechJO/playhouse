@@ -71,7 +71,21 @@ function buildFillInBody(aObj) {
 			htmlStmt += '<div class="q_space w-100">';
 				
 				htmlStmt += '<table>';
+
+				
+
 					htmlStmt += '<tr>';
+						if(aObj.titles != 'no' && aObj.titles != "" && aObj.titles != undefined){
+					
+						for (let t = 0; t < aObj.titles.length; t++) {
+							htmlStmt += '<th class="">';
+								htmlStmt += '<div class="off d-flex text-wrap Box contant min_w_fit_contant img-'+t+'">';
+								htmlStmt += '<p>' + aObj.titles[t] + '</p>';
+								htmlStmt += '</div>';
+							htmlStmt += '</th>';
+						}
+					
+					}
 					for (x = 0; x < headings; x++) {
 					htmlStmt += '<th class="">';
 						htmlStmt += '<div class="off d-flex text-wrap Box contant min_w_fit_contant">';
@@ -126,13 +140,6 @@ function buildFillInBody(aObj) {
 				htmlStmt += '</table>';
 			htmlStmt += '</div></div>';
 
-			if(aObj.titles != 'no' && aObj.titles != ""){
-				for(let x=0; x<aObj.titles.length; x++){
-					// htmlStmt += '<div class="img_space img-'+x+'"><img src="'+aObj.images[x]+'"></img></div>';
-					htmlStmt += '<div class="img_space img-'+x+'"><p>'+aObj.titles[x]+'</p></div>';
-				}
-			}
-
 		htmlStmt += '</div>';
 		htmlStmt += '</div></div></div>'; // end - all_cont / options 
 		
@@ -145,4 +152,4 @@ function buildFillInBody(aObj) {
 }
 function nextChar(c) {
 	return String.fromCharCode(c.charCodeAt(0) + 1);
-}  
+}

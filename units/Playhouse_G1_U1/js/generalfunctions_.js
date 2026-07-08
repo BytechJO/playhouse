@@ -488,7 +488,7 @@ function setLoadedStatus(val) {
             if (_fileType != '') {
                 switch (_fileType) {
                     case 'reading':
-                        callReadingFunctions( _activityData,_actIndx);
+                        callReadingFunctions();
                         break;
                     case 'fillin':
                     case 'mcq':

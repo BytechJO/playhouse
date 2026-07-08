@@ -1,0 +1,168 @@
+.all_cont{
+    /* height: 100%; */
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.screen_elements{
+    width: 90%;
+    height: 100%;
+}
+
+.blue_text {
+    color: rgb(0, 185, 242);
+    font-size: 27px;
+}
+
+.readcolour_group{
+    width: 95%;
+    max-width: 950px;
+}
+
+/* ---- reading sentences ---- */
+.rc_sentences{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.rc_sentence_row{
+    padding: 6px 0;
+    gap: 8px;
+}
+
+.q_num_space{
+    width: 30px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.rc_sentence_text{
+    font-family: Arcon;
+    font-size: 19px;
+    color: black;
+}
+
+.rc_sentence_text sup{
+    font-size: 12px;
+}
+
+/* ---- colouring area ---- */
+.rc_colour_area{
+    width: 100%;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.colour_box{
+    position: relative;
+    width: 457px;
+    height: 317px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 2px solid #35a3d4; */
+    border-radius: 16px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.colour_canvas{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: crosshair;
+    touch-action: none;
+}
+
+/* ---- controls: palette + brush size + clear ---- */
+.colour_controls{
+    gap: 14px;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.palette{
+    gap: 8px;
+    max-width: 130px;
+    justify-content: center;
+}
+
+.paletteSwatch{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    outline: 2px solid #cfcfcf;
+    cursor: pointer;
+}
+
+.paletteSwatch.active{
+    outline: 3px solid #333;
+}
+
+.brushSizes{
+    gap: 10px;
+}
+
+.brushSizeBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #fff;
+}
+
+.brushSizeBtn.active{
+    border-color: #2f6fb3;
+    background: rgba(47,111,179,0.12);
+}
+
+.brushDot{
+    border-radius: 50%;
+    background: #333;
+}
+
+.brush_thin{
+    width: 6px;
+    height: 6px;
+}
+
+.brush_thick{
+    width: 16px;
+    height: 16px;
+}
+
+.clearColourBtn{
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    opacity: 0.85;
+}
+.clearColourBtn img{
+    width: 100%;
+}
+
+/* ************************************************* */
+@media (max-width: 767.98px){
+    .rc_colour_area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .colour_box{
+        width: 100%;
+        max-width: 340px;
+        height: 220px;
+    }
+    .colour_controls{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
