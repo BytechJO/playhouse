@@ -11,9 +11,10 @@
 
 .tick_group {
     margin: 5px auto;
-    /* width: 920px; */
+    width: 920px;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: unset !important;
     align-items: center;
     justify-content:  space-around;

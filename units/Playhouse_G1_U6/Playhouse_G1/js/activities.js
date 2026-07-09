@@ -279,6 +279,8 @@ function initiateActivityType(aActTyp, aActSubType) {
     theActivity = new ColourImg(quePart, colourimg_data);
   } else if (aActTyp == "drawwrite") {
     theActivity = new DrawWrite(quePart, drawwrite_data);
+  } else if (aActTyp == "crossword") {
+    theActivity = new Crossword(quePart, crossword_data);
   }else if (aActTyp == "standAlone") {
     theActivity = "standAlone";
   } else {

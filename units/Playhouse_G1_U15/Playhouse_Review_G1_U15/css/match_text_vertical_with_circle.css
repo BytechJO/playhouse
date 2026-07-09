@@ -33,6 +33,7 @@ body {
 
 .options {
   position: relative;
+  margin-bottom: 50px;
   /* margin-top: -98px; */
   /* padding: 5px 30px; */
   /* border: 4px dashed #00aeef;
@@ -142,6 +143,7 @@ body {
 }
 .drag_wrap{
   height: 100%;
+      margin-bottom: 20px;
 }
 .icon_wrap_holder {
   position: absolute;

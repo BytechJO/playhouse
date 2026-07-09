@@ -3,6 +3,16 @@
 // (2) fillin
 var _activityData = {
    "list": [
+      //  {
+      //    'file'               : 'crossword.html',
+      //    'type'               : 'crossword',
+      //    'subtype'            : '',
+      //    'build'              : 'yes', // yes (or) no
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 1,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          'file'               : 'fillin_puzzle.html',
          'type'               : 'wordpuzzle',

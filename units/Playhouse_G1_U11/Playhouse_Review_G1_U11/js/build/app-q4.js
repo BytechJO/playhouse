@@ -15,21 +15,26 @@ function buildLookCircleWriteBody(aObj) {
         htmlStmt += '<a href=""><img src="../images/icons/next_btn.png"/></a></div>';
 
         // act_head_group — نفس MCQ بالضبط
-        htmlStmt += '<div class="act_head_group justify-content-center">';
-            htmlStmt += '<div class="audioIcon off contant" data-slideNum="1" data-audio="' + aObj.mainTitleAudio + '">';
-           
-            htmlStmt += '</div>';
-            htmlStmt += '<div class="activityHeading">';
-                htmlStmt += '<div class="audioIcon off contant audioQuestionTitle" data-slideNum="1" data-audio="' + aObj.subTitleAudio + '">';
-                htmlStmt += '<div class="page_sub_title d-flex">';
-                htmlStmt += '<p>' + aObj.subTitleTextLeft + '</p>';
-                for (var si = 0; si < aObj.subTitleIcons.length; si++) {
-                    htmlStmt += '<img src="' + aObj.subTitleIcons[si] + '"/>';
-                }
-                htmlStmt += '<p>' + aObj.subTitleTextRight + '</p>';
-                htmlStmt += '</div></div>';
-            htmlStmt += '</div>';
-        htmlStmt += '</div>'; // /act_head_group
+	// ===================================================================== heading =====================
+		htmlStmt += '<div class="act_head_group justify-content-center">';
+			htmlStmt += '<div class="audioIcon off contant " data-slideNum="' + 1 + '" data-audio="' + aObj.mainTitleAudio + '">';
+				htmlStmt += '<div class="q-type-img-container">';
+				
+				htmlStmt += '</div>';
+			htmlStmt += '</div>';
+
+			htmlStmt += '<div class="activityHeading">'
+				htmlStmt += '<div class="audioIcon off contant audioQuestionTitle" data-slideNum="' + 1 + '" data-audio="' + aObj.subTitleAudio + '">';
+				htmlStmt += "<div class='page_sub_title d-flex'>";
+					htmlStmt += "<p> " + aObj.subTitleTextLeft + " </p>";
+					for (var sicons = 0 ; sicons < aObj.subTitleIcons.length ; sicons++) {
+						htmlStmt += "<img src='" + aObj.subTitleIcons[sicons] + "'/>";
+					}
+					htmlStmt += "<p> " + aObj.subTitleTextRight + " </p>";
+				htmlStmt += "</div>";
+				htmlStmt += '</div>';
+			htmlStmt += '</div>';
+		htmlStmt += '</div>';
 
         // options cont_ht_sf — نفس MCQ
         htmlStmt += '<div class="options cont_ht_sf mx-auto">';

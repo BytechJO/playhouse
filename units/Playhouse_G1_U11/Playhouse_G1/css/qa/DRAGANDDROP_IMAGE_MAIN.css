@@ -195,7 +195,7 @@
 
 .drag_drop_questions img {
      width: 170px;
-    height: 200px;
+    /* height: 200px; */
   object-fit: contain;
 }
 
@@ -952,7 +952,9 @@
 .multi_check_cross_activity .question_row .answer_col {
   float: left;
 }
-
+.qus_img{
+height: 200px;
+}
 .multi_check_cross_activity .question_row .question_col {
   width: 50%;
   padding-left: 10px;

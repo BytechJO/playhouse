@@ -67,11 +67,16 @@ td {
 #pick_1_19,#pick_1_25,#pick_1_31,#pick_1_37,#pick_1_43{
   /* width: 300px; */
   padding: 2px 30px;
+  display: flex;
+  justify-content: flex-start;
+  height: 120px;
+  align-items: center;
+  gap: 10px;
 }
 
 .images-border {
-  height: 103px;
-  border-radius: 50%;
+    height: 90px;
+    width: 90px;
 }
 
 .icon_wrap {

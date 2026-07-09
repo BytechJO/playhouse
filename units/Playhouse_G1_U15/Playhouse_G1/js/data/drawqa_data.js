@@ -1,3 +1,25 @@
+
+var stereo_data = {
+    "audio":"",
+    "exist":false,
+    "bgColor_rgb":"rgb(53, 130, 180)",
+    "type":"text",
+    "playListData" : [
+        {
+          'audiourl': '../audios/page_78/PLAYHOUSE_1_WB_UNIT_15_TRACK_11_01.mp3',
+        },
+        {
+          'url': '',
+        },
+        {
+          'url': '',
+        },
+        {
+          'url': '',
+        }
+    ],
+  }
+
 var drawqa_data = {
      "mainTitle"             : "../images/pages/sb-icons/gramprac_main_title.png",
     "mainTitleIcon"         : "",

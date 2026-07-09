@@ -602,6 +602,14 @@ function setLoadedStatus(val) {
                 buildLetterPathBody(letterpath_data);
               }
               break;
+               case "drawqa":
+              if (
+                typeof drawqa_data != undefined &&
+                drawqa_data != null
+              ) {
+                buildDrawQABody(drawqa_data);
+              }
+              break;
                case "circleunderline_word":
               if (
                 typeof circleunderline_word_data != undefined &&
@@ -650,6 +658,7 @@ function setLoadedStatus(val) {
           case "linedraw":
           case "dragndrop":
           case "coloring":
+            case "drawqa":
           case "circleunderline":
           case "circleunderline_word":
             callActivityFunctions(

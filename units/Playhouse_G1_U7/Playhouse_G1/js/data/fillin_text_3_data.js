@@ -26,7 +26,7 @@ var fillin_data = {
     "mainTitleIcon"         : "../images/pages/sb-icons/readwrite_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-45px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : '<span class="blue_text">1</span> Answer the questions.',
+    "subTitleTextLeft"      : '<span class="blue_text">2</span> Answer the questions.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",

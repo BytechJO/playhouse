@@ -74,17 +74,17 @@ function buildMcqTickBody(aObj) {
                         htmlStmt += '<tr>'
                         opened = true;
                     }
-                    htmlStmt += ' <td id="pick_' + (x + 1) + '_' + (y + 1) + '" class="tick_fieldgap-20 pick align-items-baseline"> ';
+                    htmlStmt += ' <td id="pick_' + (x + 1) + '_' + (y + 1) + '" class="tick_fieldgap-20 pick"> ';
 					
-                    htmlStmt += '<div class="q_num_space">';
-					if (tempObj.numbering == 'alphabet') {
-						xx = (y == 0) ? tempObj.numberstartfrom : nextChar(xx);
-					} else if (tempObj.numbering == 'number') {
-						xx = (y + parseInt(tempObj.numberstartfrom));
-					}else{
-                        xx=''
-                    }
-					htmlStmt += xx + '</div>';
+                    // htmlStmt += '<div class="q_num_space">';
+					// if (tempObj.numbering == 'alphabet') {
+					// 	xx = (y == 0) ? tempObj.numberstartfrom : nextChar(xx);
+					// } else if (tempObj.numbering == 'number') {
+					// 	xx = (y + parseInt(tempObj.numberstartfrom));
+					// }else{
+                    //     xx=''
+                    // }
+					// htmlStmt += xx + '</div>';
                     htmlStmt +=(((tempObj).options)[y]).image? `<img class="images-border" src="${(((tempObj).options)[y]).image}" alt="image"/>` : '';
                     // htmlStmt +=(((tempObj).options)[y]).text.length ? '<div class="tickContent">' + (((tempObj).options)[y]).text + '</div>' : '';
                     

@@ -92,7 +92,7 @@ var mcq_tick_data = {
                 {
                     "text"          : "bananas",
                     "tick_box"      : "no",
-                    "image"         : "",
+                    "image"         : "../images/pages/activities/2-img-3.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 },  
@@ -135,7 +135,7 @@ var mcq_tick_data = {
                 {
                     "text"          : "sandwiches",
                     "tick_box"      : "no",
-                    "image"         : "",
+                    "image"         : "../images/pages/activities/8-img-9.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 },
@@ -178,7 +178,7 @@ var mcq_tick_data = {
                 {
                     "text"          : "burgers",
                     "tick_box"      : "no",
-                    "image"         : "",
+                    "image"         : "../images/pages/activities/8-img-11.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 }, 
@@ -221,7 +221,7 @@ var mcq_tick_data = {
                 {
                     "text"          : "apples",
                     "tick_box"      : "no",
-                    "image"         : "",
+                    "image"         : "../images/pages/activities/8-img-12.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 }, 
@@ -264,7 +264,7 @@ var mcq_tick_data = {
                 {
                     "text"          : "pizza",
                     "tick_box"      : "no",
-                    "image"         : "",
+                    "image"         : "../images/pages/activities/2-img-2.png",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default
                 }, 

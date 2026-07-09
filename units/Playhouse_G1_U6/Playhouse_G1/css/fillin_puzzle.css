@@ -21,9 +21,10 @@ img.bg_img {
 /* } */
 
 .options {
-  width: 89%;
-  margin: auto;
-  font-size: 22px;
+     width: 89%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 22px;
 }
 
 .word_options {
@@ -75,14 +76,14 @@ img.bg_img {
 }
 
 .puzzle_container {
-  width: 78%;
+  width: 80%;
   margin: 0px auto;
   position: relative;
 }
 
 .puzzlematrix {
   position: relative;
-  width: 52%;
+  width: 57%;
   height: 530px;
   margin: 5px;
 }
@@ -161,23 +162,23 @@ img.bg_img {
 }
 
 .img-1{
-  top: -60px;
+    top: -12%;
 }
 .img-2{
-  top: -36px;
-  left: 354px;
+    top: -9%;
+    left: 37%;
 }
 .img-3{
-  top: 27px;
-  left: 334px;
+     top: 2%;
+    left: 33%;
 }
 .img-4{
-  top: 93px;
-  left: 164px;
+top: 16%;
+    left: 14%;
 }
 .img-5{
-  top: 173px;
-  left: 232px;
+     top: 31%;
+    left: 21%;
 }
 .img-6{
   top: 203px;

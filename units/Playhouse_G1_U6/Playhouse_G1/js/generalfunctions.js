@@ -614,6 +614,14 @@ function setLoadedStatus(val) {
                 buildLetterPathBody(letterpath_data);
               }
               break;
+            case "crossword":
+              if (
+                typeof crossword_data != undefined &&
+                crossword_data != null
+              ) {
+                buildCrosswordBody(crossword_data);
+              }
+              break;
             case "writebox":
               if (typeof writebox_data != undefined && writebox_data != null) {
                 buildWriteboxBody(writebox_data);
@@ -680,6 +688,7 @@ function setLoadedStatus(val) {
           case "linedraw":
           case "dragndrop":
           case "drawwrite":
+          case "crossword":
           case "coloring":
             callActivityFunctions(
               _activityData,

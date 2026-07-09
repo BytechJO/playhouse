@@ -3,179 +3,178 @@
 /* ****************************************** */
 
 .circleanswer_wrap {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        margin-top: 30px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
 }
 
 .circleanswer_que {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .circleanswer_que .que_row {
-    flex-wrap: wrap;
-    position: relative;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .circleanswer_que .que_num {
-    font-weight: bold;
-    font-size: 18px;
-    margin-right: 10px;
-    min-width: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+  min-width: 20px;
 }
 
 .circleanswer_que .que_text {
-    font-style: italic;
-    color: #2e9fd6;
-    font-size: 25px;
-    margin-right: 20px;
-    flex: 1 1 auto;
+  font-style: italic;
+  color: #2e9fd6;
+  font-size: 25px;
+  margin-right: 20px;
+  flex: 1 1 auto;
 }
 
 .circleanswer_que .options_wrap {
-    /* width: 100%; */
-    margin-top: 10px;
-    gap: 20px;
-    flex-wrap: wrap;
+  /* width: 100%; */
+  margin-top: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* ---------- Speech bubble ---------- */
 .bubble_pick {
-    position: relative;
-    cursor: pointer;
-    /* min-width: 300px;
+  position: relative;
+  cursor: pointer;
+  /* min-width: 300px;
     max-width: 460px; */
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.main-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 20px; */
-    width: 100%;
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 20px; */
+  width: 100%;
 }
 .bubble_pick .bubble_inner {
-    position: relative;
-    z-index: 2;
-    background: #ffffff;
-    border: 2px solid #2e9fd6;
-    border-radius: 22px;
-    padding: 14px 18px 20px 18px;
-    font-size: 20px;
-    width: 180px;
-    color: #333;
-    text-align: center;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  border: 2px solid #2e9fd6;
+  border-radius: 22px;
+  padding: 14px 18px 20px 18px;
+  font-size: 20px;
+  width: 180px;
+  color: #333;
+  text-align: center;
 }
 
 /* speech bubble tail */
 .bubble_pick .bubble_inner::after {
-    content: '';
-    position: absolute;
-    left: 26px;
-    bottom: -12px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 12px solid #2e9fd6;
+  content: "";
+  position: absolute;
+  left: 26px;
+  bottom: -12px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #2e9fd6;
 }
 
 .bubble_pick .bubble_inner::before {
-    content: '';
-    position: absolute;
-    left: 28px;
-    bottom: -9px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 10px solid #ffffff;
-    z-index: 3;
+  content: "";
+  position: absolute;
+  left: 28px;
+  bottom: -9px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #ffffff;
+  z-index: 3;
 }
 
 .bubble_pick:hover .bubble_inner {
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------- Circle SVG overlay ---------- */
 .circle_svg {
-    position: absolute;
-    top: -18px;
-    left: -18px;
-    width: calc(100% + 36px);
-    height: calc(100% + 36px);
-    z-index: 4;
-    pointer-events: none;
-    display: none;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: calc(100% + 36px);
+  height: calc(100% + 36px);
+  z-index: 4;
+  pointer-events: none;
+  display: none;
 }
 
 .circle_path {
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .circle-default .circle_path {
-    stroke: #f5a623;
-    stroke-width: 5;
+  stroke: #f5a623;
+  stroke-width: 5;
 }
-
 
 /* ---------- Feedback icons ---------- */
 .circleanswer_que .icon_wrap_holder {
-    width: 100%;
-    justify-content: flex-end;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .circleanswer_que .icon_wrap {
-    display: none;
-    width: 30px;
-    height: 30px;
+  display: none;
+  width: 30px;
+  height: 30px;
 }
 
 .circleanswer_que .tick,
 .circleanswer_que .cross {
-    display: none;
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .circleanswer_que .tick {
-    background-image: url('../images/icons/tick.png');
+  background-image: url("../images/icons/tick.png");
 }
 
 .circleanswer_que .cross {
-    background-image: url('../images/icons/cross.png');
+  background-image: url("../images/icons/cross.png");
 }
 
 /* ---------- Audio icon ---------- */
 .circleanswer_que .audioIcon {
-    width: 26px;
-    height: 26px;
-    background-image: url('../images/icons/audio.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    margin-left: 8px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/icons/audio.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 8px;
 }
 
 .circleanswer_que .audioIcon.disabled {
-    opacity: 0.4;
-    pointer-events: none;
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-    .bubble_pick {
-        min-width: 150px;
-        max-width: 100%;
-    }
-    .circleanswer_que .options_wrap {
-        gap: 14px;
-    }
+  .bubble_pick {
+    min-width: 150px;
+    max-width: 100%;
+  }
+  .circleanswer_que .options_wrap {
+    gap: 14px;
+  }
 }

@@ -103,7 +103,7 @@ function buildCircleAnswerBody(aObj) {
       }
       htmlStmt += '<div class="main-container">';
 
-      htmlStmt += '<div class="main-img" style="height: 150px; width: auto;">';
+      htmlStmt += '<div class="main-img" style="height: 150px; width: 350px;">';
       htmlStmt +=
         "<img src='" +
         qObj.mainImg +

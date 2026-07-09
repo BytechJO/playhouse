@@ -23,7 +23,7 @@ var reading_data = {
     "mainTitleIcon": "",
     "mainTitleIconPos": {"right": "100px"},
     "mainTitleAudio": "../audios/under.mp3",
-    "subTitleTextLeft": "<span class='blue_text'>2</span> Read.",
+    "subTitleTextLeft": "<span class='blue_text'>1</span> Read.",
     "subTitleTextRight": "",
     "subTitleIcons": [],
     "subTitleAudio": "../audios/under.mp3",

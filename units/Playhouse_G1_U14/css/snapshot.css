@@ -604,7 +604,7 @@ body {
 
 .readHilightsPanel2_1 .readHilightsPanel_container {
   position: relative;
-  top: 100px;
+  /* top: 100px; */
   /* padding-left: 2rem; */
   /* width: 80%; */
   padding: 34px 46px;
