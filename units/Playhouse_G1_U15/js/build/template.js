@@ -21,7 +21,7 @@ function buildHeader(aObj) {
         }
         fStmt += "<div class='container header_wrap'>";
         fStmt += "<div class='d-flex justify-content-between header_wrap'>";
-        fStmt += "<div class='col-1 col-xs-1 col-md-3'>";
+        fStmt += "<div class='col-xs-1 col-md-3'>";
         if (typeof aObj.icon != undefined && aObj.icon != null) {
             fStmt += "<div class='unitIcon my-auto'>";
                 fStmt += "<img src='" + _templatePath + aObj.icon + "'>";

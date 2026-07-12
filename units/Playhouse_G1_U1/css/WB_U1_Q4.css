@@ -2,7 +2,7 @@
     /* max-width: 200px; */
     max-height: 200px;
     object-fit: cover;
-    border: 2px solid #25aae1;
+    /* border: 2px solid #25aae1; */
     border-radius: 20px;
   }
 .grid-table{
@@ -83,7 +83,7 @@ margin-top: 20px;
   margin: 0 50px;
 } */
 .que:first-of-type {
-  border-right: solid 2px deepskyblue;
+  /* border-right: solid 2px deepskyblue; */
   margin-right: 70px;
 }
 .que {

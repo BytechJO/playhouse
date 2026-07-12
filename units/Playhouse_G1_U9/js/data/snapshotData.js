@@ -142,12 +142,12 @@ var Popups_data = {
     "left:18%; top:42%;",
     "left:24%; top:60%;",
     "left:44%; top:37%;",
-    "left:47%; top:66%;", //4
-    "left:70%; top:10%;",
-    "left:70%; top:30%;",
-    "left:72%; top:50%;", //7
+    "left:45%; top:82%;", //4
+    "left:70%; top:5%;",
+    "left:70%; top:25%;",
+    "left:70%; top:51%;", //7
     "left:57%; top:77%;",
-    "left:72%; top:75%;",
+    "left:72%; top:81%;",
   ],
   imagesAudio: [
     "../audios/page_66/1_crisps.mp3",

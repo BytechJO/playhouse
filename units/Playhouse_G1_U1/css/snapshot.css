@@ -5,7 +5,7 @@ body {
 
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 85% 85%;
+  background-size: 80% 100%;
   position: relative;
 }
 
@@ -697,11 +697,11 @@ body {
 
 @media (max-width: 767.98px) {
   body {
-    background-image: url(../images/pages/snapshots/right-background.png);
-    /* background-size: contain; */
+    /* background-image: url(../images/pages/snapshots/right-background.png); */
+    /* background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
-    background-position-y: -60px;
+    background-position-y: -60px; */
   }
 }
 

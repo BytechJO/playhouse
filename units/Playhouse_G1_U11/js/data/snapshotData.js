@@ -143,16 +143,16 @@ var Popups_data = {
     "../images/pages/page-1/intro-10.png",
   ],
   postions: [
-    "left: 13%; top: 27%;",
-    "left: 30%; top: 20%;",
-    "left: 50%;top: 6%;", //3
-    "left: 74%; top: 22%;",
+    "left: 17%; top: 22%;",
+    "left: 30%; top: 15%;",
+    "left: 52%; top: 0%;", //3
+    "left: 73%; top: 15%;",
     "left: 12%; top: 43%;", //5
     "left: 35%; top: 30%;",
     "left: 62%;top: 34%;", //7
     "left: 19%; top: 62%;",
     "left: 47%; top: 48%;",
-    "left: 73%; top: 83%;",
+    "left: 70%; top: 85%;",
   ],
   imagesAudio: [
     "../audios/page_82/1_ferry.mp3",

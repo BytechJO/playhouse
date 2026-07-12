@@ -4,7 +4,7 @@ var linedraw_data = {
   mainTitleIcon: "",
   mainTitleIconPos: { right: "-20px" },
   mainTitleAudio: "../audios/under.mp3",
-  subTitleTextLeft: "<span class='blue_text'>1</span> Match.",
+  subTitleTextLeft: "<span class='blue_text'>3</span> Match.",
   subTitleTextRight: "",
   subTitleIcons: [],
   subTitleAudio: "../audios/under.mp3",

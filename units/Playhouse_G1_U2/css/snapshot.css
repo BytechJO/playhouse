@@ -5,7 +5,7 @@ body {
 
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 85% 85%;
+  background-size: 80% 100%;
   position: relative;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .readHighlightsBtn {
-  width: 160px;
+  width: 150px;
   /* margin: 0 20px; */
   display: flex;
   border-radius: 51%;

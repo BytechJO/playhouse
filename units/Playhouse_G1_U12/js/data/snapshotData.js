@@ -128,7 +128,7 @@ var Popups_data = {
     "clothes shop",
     "sell",
     "sales assistant",
-    "7 hospital",
+    "hospital",
     "help",
     "doctor",
     "work",
@@ -153,18 +153,18 @@ var Popups_data = {
   ],
   postions: [
     "left: 16%; top: 36%;",
-    "left: 34%; top: 18%;",
+    "left: 34%; top: 13%;",
     "left: 28%; top: 41%;", //3
-    "left: 65%; top: 25%;",
-    "left: 59%; top: 24%;", //5
+    "left: 64%; top: 20%;",
+    "left: 57%; top: 19%;", //5
     "left: 68%; top: 40%;",
     "left: 31%; top: 60%;", //7
     "left: 22%; top: 75%;",
     "left: 37%; top: 76%;", //9
     "left: 57%; top: 54%;",
     "left: 64%; top: 61%;", //11
-    "left: 65%;top: 80%;",
-    "left: 71%; top: 80%;", //13
+    "left: 64%; top: 83%;",
+    "left: 73%; top: 83%;", //13
   ],
   imagesAudio: [
     "../audios/page_88/1_chef.mp3",

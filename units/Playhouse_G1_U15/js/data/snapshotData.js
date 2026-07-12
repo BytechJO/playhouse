@@ -143,16 +143,16 @@ var Popups_data = {
     "../images/pages/page-1/intro-10.png",
   ],
   postions: [
-    "left: 7%; top: 34%;",
-    "left: 24%; top: 18%;",
-    "left: 44%; top: 22%;", //3
-    "left: 60%; top: 18%;",
-    "left: 70%; top: 32%;", //5
-    "left: 19%; top: 62%;",
+    "left: 9%;  top: 32%;",
+    "left: 26%; top: 13%;",
+    "left: 43%; top: 15%;", //3
+    "left: 59%; top: 11%;",
+    "left: 69%; top: 27%;", //5
+    "left: 18%; top: 69%;",
     "left: 41%; top: 48%;", //7
     "left: 58%; top: 44%;",
     "left: 32%; top: 63%;",
-    "left: 55%; top: 77%;",
+    "left: 55%; top: 82%;",
   ],
   imagesAudio: [
     "../audios/page_110/1_T-shirt.mp3",

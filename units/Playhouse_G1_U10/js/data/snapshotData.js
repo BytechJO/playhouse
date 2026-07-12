@@ -143,16 +143,16 @@ var Popups_data = {
     "../images/pages/page-1/intro-10.png",
   ],
   postions: [
-    "left: 13%; top: 16%;",
+    "left: 13%; top: 12%;",
     "left: 28%; top: 0%;",
     "left: 15%; top: 36%;", //3
     "left: 29%; top: 27%;",
-    "left: 50%; top: 8%;", //5
+    "left: 51%; top: 4%;", //5
     "left: 46%; top: 63%;",
     "left: 73%; top: 18%;", //7
     "left: 66%; top: 78%;",
-    "left: 77%; top: 45%;",
-    "left:24%; top: 85%;",
+    "left: 81%; top: 47%;",
+    "left:22%; top: 85%;",
   ],
   imagesAudio: [
     "../audios/page_76/1_cinema.mp3",

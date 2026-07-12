@@ -145,7 +145,7 @@ var Popups_data = {
   postions: [
     "left:49%; top:10%;",
     "left:66%; top:12%;",
-    "left:75%; top:0%;",
+    "left:75%; top:5%;",
     "left:33%; top:60%;",
     "left:67%; top:44%;", //5
     "left:50%; top:72%;",

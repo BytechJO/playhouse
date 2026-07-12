@@ -17,7 +17,8 @@ body {
     position: absolute;
     display: flex;
     z-index: 1040;
-    flex-direction: column;
+    flex-direction: row-reverse;
+      transform: translate(-50%, -50%);
     align-items: center;
     width: 160px;
 }

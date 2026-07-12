@@ -1,9 +1,9 @@
-body {
+/* body {
     background-image: url(../images/pages/page-1/page-background-intro-2.png);
     background-size: contain;
     background-position: center;
     position: relative;
-}
+} */
 
 .all_cont {
     height: 100%;
@@ -17,7 +17,7 @@ body {
     position: absolute;
     display: flex;
     z-index: 1040;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     transform: translate(-50%, -50%);
     width: 140px;
