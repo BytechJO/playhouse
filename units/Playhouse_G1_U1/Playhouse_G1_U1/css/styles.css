@@ -107,6 +107,165 @@ body {
     }
 }
 
+
+
+.studentBookToggle {
+  cursor: pointer;
+}
+
+.studentBookSidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: left 0.4s ease;
+  z-index: 99999;
+  overflow-y: auto;
+  direction: ltr;
+}
+
+.studentBookSidebar.open {
+  left: 0;
+}
+
+.studentBookSidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #cccccc;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.studentBookSidebarClose {
+  cursor: pointer;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.studentBookSidebarList {
+  display: flex;
+  flex-direction: column;
+}
+
+.studentBookSidebarItem {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+
+}
+
+.studentBookSidebarItem:hover {
+  background: #f0f0f0;
+}
+
+.studentBookSidebarItem.active {
+  background: #4a90d9;
+  color: #fff;
+  font-weight: bold;
+}
+
+.studentBookSidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+  display: none;
+}
+
+.studentBookSidebarOverlay.show {
+  display: block;
+}
+
+
+.workBookToggle {
+  cursor: pointer;
+}
+
+.workBookSidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: left 0.4s ease;
+  z-index: 9999999;
+  overflow-y: auto;
+  direction: ltr;
+}
+
+.workBookSidebar.open {
+  left: 0;
+}
+
+.workBookSidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #cccccc;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.workBookSidebarClose {
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.workBookSidebarList {
+  display: flex;
+  flex-direction: column;
+}
+
+.workBookSidebarItem {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+
+}
+
+.workBookSidebarItem:hover {
+  background: #f0f0f0;
+}
+
+.workBookSidebarItem.active {
+  background: #4a90d9;
+  color: #fff;
+  font-weight: bold;
+}
+
+.workBookSidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+  display: none;
+}
+
+.workBookSidebarOverlay.show {
+  display: block;
+}
+
+
 /**************** header ***************/
 header {
     width: 100%;

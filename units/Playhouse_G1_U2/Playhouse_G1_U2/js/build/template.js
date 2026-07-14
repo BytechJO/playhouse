@@ -75,12 +75,12 @@ function buildFooter(aObj) {
         fStmt += "<div class='container footer_wrap'>";
         fStmt += "<div class='d-flex justify-content-between mt-2'>";
         fStmt += "<div class='d-flex col-10 col-xs-10 col-md-10 flex-wrap align-items-center'>";
-            fStmt += '<a href="' + aObj.booksbutton.studentbook.link + '">';
-            fStmt += '<img src="' + aObj.booksbutton.studentbook.icon + '">';
-            fStmt += '</a>';
-            fStmt += '<a href="' + aObj.booksbutton.workbook.link + '">';
-            fStmt += '<img src="' + aObj.booksbutton.workbook.icon + '">';
-            fStmt += '</a>';
+            fStmt += '<div class="studentBookToggle" id="studentBookToggle">';
+    fStmt += '<img src="' + aObj.booksbutton.studentbook.icon + '">';
+    fStmt += "</div>";
+    fStmt += '<div class="workBookToggle" id="workBookToggle">';
+    fStmt += '<img src="' + aObj.booksbutton.workbook.icon + '">';
+    fStmt += "</div>";
         fStmt += "</div>";
 
         // fStmt += "<div class='d-flex col-7 col-xs-6 col-md-7 flex-wrap justify-content-center'>";
@@ -195,15 +195,125 @@ function buildSubFooter(aObj, aVal) {
     }
 
 }
+function isInsideWorkbookFolder() {
+  var pathSegments = window.location.pathname.split('/');
+  var occurrences = pathSegments.filter(function (seg) {
+    return seg === 'Playhouse_G1_U2';
+  }).length;
+  return occurrences > 1; // لو الاسم تكرر أكتر من مرة، معناته إنت جوا فولدر الورك بوك المتداخل
+}
+
+
+function buildWorkBookSidebar() {
+  if (typeof _workBookData == "undefined" || !_workBookData.list) return;
+
+  var currentFile = getCurrFileOrDirectory("file").toLowerCase();
+  var sStmt = '<div class="workBookSidebar" id="workBookSidebar">';
+  sStmt += '<div class="workBookSidebarHeader">';
+  sStmt += '<span>Workbook Pages</span>';
+  sStmt += '<span class="workBookSidebarClose" id="workBookSidebarClose">&times;</span>';
+  sStmt += '</div>';
+  sStmt += '<div class="workBookSidebarList">';
+
+$.each(_workBookData.list, function (index, page) {
+  if (page.build == "yes") {
+    var pageLabel = "Page " + (index + 1);
+    var activeClass = page.file.toLowerCase() == currentFile ? "active" : "";
+    var wbPrefix = isInsideWorkbookFolder() ? "" : "../Playhouse_G1_U2/views/";
+    sStmt +=
+      '<a class="workBookSidebarItem ' +
+      activeClass +
+      '" href="' +
+      wbPrefix +
+      page.file +
+      '">' +
+      pageLabel +
+      "</a>";
+  }
+});
+
+  sStmt += "</div></div>";
+  sStmt += '<div class="workBookSidebarOverlay" id="workBookSidebarOverlay"></div>';
+
+  $("body").append(sStmt);
+
+  $(document).on("click", "#workBookToggle", function () {
+    $("#workBookSidebar").addClass("open");
+    $("#workBookSidebarOverlay").addClass("show");
+  });
+
+  $(document).on(
+    "click",
+    "#workBookSidebarClose, #workBookSidebarOverlay",
+    function () {
+      $("#workBookSidebar").removeClass("open");
+      $("#workBookSidebarOverlay").removeClass("show");
+    },
+  );
+}
+function buildStudentBookSidebar() {
+  if (typeof _activityData == "undefined" || !_activityData.list) return;
+
+  var currentFile = getCurrFileOrDirectory("file").toLowerCase();
+  var sStmt = '<div class="studentBookSidebar" id="studentBookSidebar">';
+  sStmt += '<div class="studentBookSidebarHeader">';
+  sStmt += "<span>Student Book Pages</span>";
+  sStmt +=
+    '<span class="studentBookSidebarClose" id="studentBookSidebarClose">&times;</span>';
+  sStmt += "</div>";
+  sStmt += '<div class="studentBookSidebarList">';
+
+$.each(_activityData.list, function (index, page) {
+  if (page.build == "yes") {
+    var pageLabel = "Page " + (index + 1);
+    var activeClass = page.file.toLowerCase() == currentFile ? "active" : "";
+    var sbPrefix = isInsideWorkbookFolder() ? "../../views/" : "";
+    sStmt +=
+      '<a class="studentBookSidebarItem ' +
+      activeClass +
+      '" href="' +
+      sbPrefix +
+      page.file +
+      '">' +
+      pageLabel +
+      "</a>";
+  }
+});
+
+  sStmt += "</div></div>";
+  sStmt +=
+    '<div class="studentBookSidebarOverlay" id="studentBookSidebarOverlay"></div>';
+
+  $("body").append(sStmt);
+
+  $(document).on("click", "#studentBookToggle", function () {
+    $("#studentBookSidebar").addClass("open");
+    $("#studentBookSidebarOverlay").addClass("show");
+  });
+
+  $(document).on(
+    "click",
+    "#studentBookSidebarClose, #studentBookSidebarOverlay",
+    function () {
+      $("#studentBookSidebar").removeClass("open");
+      $("#studentBookSidebarOverlay").removeClass("show");
+    },
+  );
+}
+
+
 function buildCoreFrame(ob) {
-    _templatePath = buildTemplatePath();
-    if (typeof ob !== undefined && ob != null) {
-        _templateData = _data;
-        buildHtmlTitle(_templateData.title);
-        buildHeader(_templateData.header);
-        buildFooter(_templateData.footer);
-        buildBody(_templateData.body);
-        // buildSubFooter(_templateData.subfooter);
-        setLoadedStatus('coreFrame');
-    }
+  _templatePath = buildTemplatePath();
+  if (typeof ob !== undefined && ob != null) {
+    _templateData = _data;
+    buildHtmlTitle(_templateData.title);
+    buildHeader(_templateData.header);
+    buildFooter(_templateData.footer);
+    buildBody(_templateData.body);
+   
+    buildStudentBookSidebar(); // <-- ضيف هاد السطر
+ buildWorkBookSidebar(); // <-- ضيف هاد السطر
+    // buildSubFooter(_templateData.subfooter);
+    setLoadedStatus("coreFrame");
+  }
 }

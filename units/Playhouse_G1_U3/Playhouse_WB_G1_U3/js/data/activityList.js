@@ -1,7 +1,7 @@
 // types
 // (1) mcq
 // (2) fillin
-var _activityData = {
+var _workBookData = {
   list: [
     {
       file: "match_img_horizantal.html",

@@ -475,20 +475,20 @@ function setLoadedStatus(val) {
       !_currFile.startsWith("slide_") &&
       _currFile != "playhouse_intro.html"
     ) {
-      _actIndx = getIndexOfFile(_currFile, _activityData.list, "file");
+      _actIndx = getIndexOfFile(_currFile, _workBookData.list, "file");
       if (_actIndx != -1) {
-        _fileType = _activityData.list[_actIndx].type;
-        _fileBuild = _activityData.list[_actIndx].build;
+        _fileType = _workBookData.list[_actIndx].type;
+        _fileBuild = _workBookData.list[_actIndx].build;
         _fileSubType =
-          typeof _activityData.list[_actIndx].subtype != undefined &&
-          _activityData.list[_actIndx].subtype != null &&
-          _activityData.list[_actIndx].subtype != ""
-            ? _activityData.list[_actIndx].subtype
+          typeof _workBookData.list[_actIndx].subtype != undefined &&
+          _workBookData.list[_actIndx].subtype != null &&
+          _workBookData.list[_actIndx].subtype != ""
+            ? _workBookData.list[_actIndx].subtype
             : "none";
       }
-      //console.log('_activityData >> ', _actIndx, _fileType, _fileBuild, _fileSubType);
+      //console.log('_workBookData >> ', _actIndx, _fileType, _fileBuild, _fileSubType);
     } else {
-      _actIndx = getIndexOfFile(_currFile, _activityData.list, "file");
+      _actIndx = getIndexOfFile(_currFile, _workBookData.list, "file");
       _fileType = _currFile.startsWith("slide_")
         ? "reading"
         : "playhouse_intro";
@@ -529,7 +529,7 @@ function setLoadedStatus(val) {
         snapshotPopup_data != null
       ) {
         buildSnapShotContent(snapshot_data, snapshotPopup_data, Popups_data);
-        callsnapshotfunctions(_activityData, _actIndx);
+        callsnapshotfunctions(_workBookData, _actIndx);
       }
     } else if (_currFile.startsWith("slide_")) {
       if (typeof reading_data != undefined && reading_data != null) {
@@ -628,10 +628,10 @@ function setLoadedStatus(val) {
       if (_fileType != "") {
         switch (_fileType) {
           case "reading":
-            callReadingFunctions(_activityData, _actIndx);
+            callReadingFunctions(_workBookData, _actIndx);
             break;
           case "playhouse_intro":
-            callsnapshotfunctions(_activityData, _actIndx);
+            callsnapshotfunctions(_workBookData, _actIndx);
             break;
           case "fillin":
           case "mcq":
@@ -641,7 +641,7 @@ function setLoadedStatus(val) {
           case "dragndrop":
           case "coloring":
             callActivityFunctions(
-              _activityData,
+              _workBookData,
               _actIndx,
               _fileType,
               _fileSubType,
@@ -649,7 +649,7 @@ function setLoadedStatus(val) {
             break;
           default:
             callActivityFunctions(
-              _activityData,
+              _workBookData,
               _actIndx,
               _fileType,
               _fileSubType,

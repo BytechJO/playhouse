@@ -1,7 +1,7 @@
 // types
 // (1) mcq
 // (2) fillin
-var _activityData = {
+var _workBookData = {
    "list": [
       {
          'file': 'AGW_1_SB_U1_A1.html',

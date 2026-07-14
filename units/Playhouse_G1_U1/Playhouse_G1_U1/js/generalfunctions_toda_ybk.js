@@ -388,13 +388,13 @@ function setLoadedStatus(val) {
     console.log('Load - Status > ', val, _loadingObj);
     if (_currDir == 'views') {
         if (_currFile != 'reading.html' && _currFile != 'snapshot.html') {
-            _actIndx = getIndexOfFile(_currFile, _activityData.list, "file");
+            _actIndx = getIndexOfFile(_currFile, _workBookData.list, "file");
             if (_actIndx != -1) {
-                _fileType = ((_activityData.list)[_actIndx]).type;
-                _fileBuild = ((_activityData.list)[_actIndx]).build;
-                _fileSubType = (typeof ((_activityData.list)[_actIndx]).subtype != undefined && ((_activityData.list)[_actIndx]).subtype != null && ((_activityData.list)[_actIndx]).subtype != '') ? ((_activityData.list)[_actIndx]).subtype : 'none';
+                _fileType = ((_workBookData.list)[_actIndx]).type;
+                _fileBuild = ((_workBookData.list)[_actIndx]).build;
+                _fileSubType = (typeof ((_workBookData.list)[_actIndx]).subtype != undefined && ((_workBookData.list)[_actIndx]).subtype != null && ((_workBookData.list)[_actIndx]).subtype != '') ? ((_workBookData.list)[_actIndx]).subtype : 'none';
             }
-            //console.log('_activityData >> ', _actIndx, _fileType, _fileBuild, _fileSubType);
+            //console.log('_workBookData >> ', _actIndx, _fileType, _fileBuild, _fileSubType);
         } else {
             _fileType = (_currFile == 'reading.html') ? 'reading' : 'snapshot';
         }
@@ -499,10 +499,10 @@ function setLoadedStatus(val) {
                     case 'linedraw':
                     case 'dragndrop':
                     case 'coloring':
-                        callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
+                        callActivityFunctions(_workBookData, _actIndx, _fileType, _fileSubType);
                         break;
                     default:
-                        callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
+                        callActivityFunctions(_workBookData, _actIndx, _fileType, _fileSubType);
                         //setLoadedStatus(getCurrFileOrDirectory('file')+'_functions');
                         break;
                 }
