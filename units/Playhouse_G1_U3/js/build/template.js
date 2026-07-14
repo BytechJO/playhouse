@@ -70,7 +70,7 @@ function buildHeader(aObj) {
 
     if (typeof aObj.title.text != undefined && aObj.title.text != null) {
       fStmt +=
-        "<div class='unitTitle d-flex align-items-center justify-content-center mx-2'style='width: fit-content; max-width: fit-content;'>";
+        "<div class='unitTitle d-flex align-items-center justify-content-center mx-2' style='width: fit-content; max-width: fit-content;'>";
       if (typeof aObj.audio != undefined && aObj.audio != null) {
         fStmt +=
           "<div class='audioIcon off my-auto' data-audio='" +
@@ -91,8 +91,7 @@ function buildHeader(aObj) {
     fStmt +=
       "<div class='col-1 col-xs-1 col-md-2 d-flex flex-wrap justify-content-between'>";
 
-    fStmt +=
-      "<div class='d-flex' style='width: 100%;'>";
+    fStmt += "<div class='d-flex' style='width: 100%;'>";
     fStmt +=
       '<img src="../images/icons/draw_icon.png"  class="toolbarToggleBtn" data-point="show_slide" >';
     fStmt +=
@@ -180,104 +179,68 @@ function buildFooter(aObj) {
     fStmt += "<div class='container footer_wrap'>";
     fStmt += "<div class='d-flex justify-content-between mt-2'>";
     fStmt +=
-      "<div class='d-flex col-3 col-xs-3 col-md-3 gap-2 align-items-center'>";
-    fStmt += '<a href="' + aObj.booksbutton.studentbook.link + '">';
+      "<div class='d-flex col-10 col-xs-10 col-md-10 justify-content-evenly align-items-center'>";
+    fStmt += '<div class="studentBookPagesToggle hamburgerBtn" id="studentBookPagesToggle">';
+fStmt += '<span></span><span></span><span></span>';
+fStmt += "</div>";
+     fStmt += '<a href="' + aObj.booksbutton.studentbook.link + '">';
     fStmt += '<img src="' + aObj.booksbutton.studentbook.icon + '">';
     fStmt += "</a>";
     fStmt += '<a href="' + aObj.booksbutton.workbook.link + '">';
     fStmt += '<img src="' + aObj.booksbutton.workbook.icon + '">';
     fStmt += "</a>";
+ 
     fStmt += "</div>";
 
-    fStmt +=
-      "<div class='d-flex col-7 col-xs-6 col-md-7 flex-wrap justify-content-center'>";
-    if (
-      aObj.buttons.length > 0 &&
-      aObj.filetoload.length > 0 &&
-      aObj.buttons.length == aObj.filetoload.length
-    ) {
-      for (var f = 0; f < aObj.buttons.length; f++) {
-        fStmt +=
-          "<div class='footer_nav_btn " +
-          aObj.buttons[f].toLowerCase() +
-          "_btn my-auto d-none d-lg-block'>";
-        var _tFile = getThisFileName(aObj.filetoload[f]);
-        var _tPath = "";
-        var _tFileToLoad = "";
-        if (getCurrFileOrDirectory("directory") == "views") {
-          if (
-            aObj.filetoload[f] == "index.html" &&
-            getCurrFileOrDirectory("directory") == "views"
-          ) {
-            _tPath = "../";
-            _tFileToLoad = aObj.filetoload[f];
-          } else {
-            _tFileToLoad = getCurrFileOrDirectory("file", aObj.filetoload[f]);
-          }
-        } else {
-          _tFileToLoad = aObj.filetoload[f];
-        }
-        var _tNeedLink =
-          aObj.filetoload[f] != "" && getCurrFileOrDirectory("file") != _tFile;
-        if (_tNeedLink) {
-          fStmt += "<a href='" + _tPath + _tFileToLoad + "'>";
-        }
-        fStmt +=
-          "<img class='h-100 ' src='" +
-          _templatePath +
-          _assetsPath +
-          "foo_" +
-          aObj.buttons[f].toLowerCase() +
-          ".png'>";
-        if (_tNeedLink) {
-          fStmt += "</a>";
-        }
-        fStmt += "</div>";
+    // fStmt += "<div class='d-flex col-6 col-xs-6 col-md-6 flex-wrap justify-content-center'>";
+    // if ((aObj.buttons.length > 0) && (aObj.filetoload.length > 0) && (aObj.buttons.length == aObj.filetoload.length)) {
+    //     for (var f = 0; f < aObj.buttons.length; f++) {
+    //         fStmt += "<div class='footer_nav_btn " + (aObj.buttons[f].toLowerCase()) + "_btn my-auto d-none d-lg-block'>";
+    //         var _tFile = getThisFileName((aObj.filetoload[f]));
+    //         var _tPath = '';
+    //         var _tFileToLoad = '';
+    //         if (getCurrFileOrDirectory('directory') == 'views') {
+    //             if ((aObj.filetoload[f]) == "index.html" && (getCurrFileOrDirectory('directory') == 'views')) {
+    //                 _tPath = '../';
+    //                 _tFileToLoad = (aObj.filetoload[f]);
+    //             } else {
+    //                 _tFileToLoad = getCurrFileOrDirectory('file', (aObj.filetoload[f]));
+    //             }
+    //         } else {
+    //             _tFileToLoad = (aObj.filetoload[f]);
+    //         }
+    //         var _tNeedLink = (aObj.filetoload[f] != "" && getCurrFileOrDirectory('file') != _tFile);
+    //         if (_tNeedLink) {
+    //             fStmt += "<a href='" + _tPath + _tFileToLoad + "'>";
+    //         }
+    //         fStmt += "<img class='h-100 ' src='" + _templatePath + _assetsPath + "foo_" + (aObj.buttons[f].toLowerCase()) + ".png'>";
+    //         if (_tNeedLink) {
+    //             fStmt += '</a>';
+    //         }
+    //         fStmt += "</div>";
 
-        fStmt +=
-          "<div class='footer_nav_btn small_nav " +
-          aObj.buttons[f].toLowerCase() +
-          "_small_btn my-auto d-none d-md-block d-lg-none' data-toggle='tooltip' data-placement='top' title='' data-original-title='" +
-          aObj.buttons[f] +
-          "'>";
-        if (_tNeedLink) {
-          fStmt += "<a href='" + _tPath + _tFileToLoad + "'>";
-        }
-        fStmt +=
-          "<img class='h-100 ' src='" +
-          _templatePath +
-          _assetsPath +
-          "foo_" +
-          aObj.buttons[f].toLowerCase() +
-          "_small.png'>";
-        if (_tNeedLink) {
-          fStmt += "</a>";
-        }
-        fStmt += "</div>";
+    //         fStmt += "<div class='footer_nav_btn small_nav " + (aObj.buttons[f].toLowerCase()) + "_small_btn my-auto d-none d-md-block d-lg-none' data-toggle='tooltip' data-placement='top' title='' data-original-title='" + (aObj.buttons[f]) + "'>";
+    //         if (_tNeedLink) {
+    //             fStmt += "<a href='" + _tPath + _tFileToLoad + "'>";
+    //         }
+    //         fStmt += "<img class='h-100 ' src='" + _templatePath + _assetsPath + "foo_" + (aObj.buttons[f].toLowerCase()) + "_small.png'>";
+    //         if (_tNeedLink) {
+    //             fStmt += '</a>';
+    //         }
+    //         fStmt += "</div>";
 
-        fStmt +=
-          "<div class='footer_nav_btn mini_nav " +
-          aObj.buttons[f].toLowerCase() +
-          "_mini_btn my-auto mx-1 d-md-none' data-toggle='tooltip' data-placement='top' title='' data-original-title='" +
-          aObj.buttons[f] +
-          "'>";
-        if (_tNeedLink) {
-          fStmt += "<a href='" + _tPath + _tFileToLoad + "'>";
-        }
-        fStmt +=
-          "<img class='h-100 ' src='" +
-          _templatePath +
-          _assetsPath +
-          "foo_" +
-          aObj.buttons[f].toLowerCase() +
-          "_mini.png'>";
-        if (_tNeedLink) {
-          fStmt += "</a>";
-        }
-        fStmt += "</div>";
-      }
-    }
-    fStmt += "</div>";
+    //         fStmt += "<div class='footer_nav_btn mini_nav " + (aObj.buttons[f].toLowerCase()) + "_mini_btn my-auto mx-1 d-md-none' data-toggle='tooltip' data-placement='top' title='' data-original-title='" + (aObj.buttons[f]) + "'>";
+    //         if (_tNeedLink) {
+    //             fStmt += "<a href='" + _tPath + _tFileToLoad + "'>";
+    //         }
+    //         fStmt += "<img class='h-100 ' src='" + _templatePath + _assetsPath + "foo_" + (aObj.buttons[f].toLowerCase()) + "_mini.png'>";
+    //         if (_tNeedLink) {
+    //             fStmt += '</a>';
+    //         }
+    //         fStmt += "</div>";
+    //     }
+    // }
+    // fStmt += "</div>";
     fStmt +=
       "<div class='d-flex col-2 col-xs-2 col-md-2 flex-wrap justify-content-end'>";
     fStmt +=
@@ -352,6 +315,52 @@ function buildSubFooter(aObj, aVal) {
     }
   }
 }
+
+function buildStudentBookPagesSidebar() {
+  if (typeof _activityData == "undefined" || !_activityData.list) return;
+
+  var currentFile = getCurrFileOrDirectory("file").toLowerCase();
+  var sStmt = '<div class="studentBookPagesSidebar" id="studentBookPagesSidebar">';
+  sStmt += '<div class="studentBookPagesSidebarHeader">';
+  sStmt += "<span>Student Book Pages</span>";
+  sStmt += '<span class="studentBookPagesSidebarClose" id="studentBookPagesSidebarClose">&times;</span>';
+  sStmt += "</div>";
+  sStmt += '<div class="studentBookPagesSidebarList">';
+
+  $.each(_activityData.list, function (index, page) {
+    if (page.build == "yes") {
+      var pageLabel = "Page " + (index + 1);
+      var activeClass = page.file.toLowerCase() == currentFile ? "active" : "";
+      sStmt +=
+        '<a class="studentBookPagesSidebarItem ' +
+        activeClass +
+        '" href="' +
+        page.file +
+        '">' +
+        pageLabel +
+        "</a>";
+    }
+  });
+
+  sStmt += "</div></div>";
+  sStmt += '<div class="studentBookPagesSidebarOverlay" id="studentBookPagesSidebarOverlay"></div>';
+
+  $("body").append(sStmt);
+
+  $(document).on("click", "#studentBookPagesToggle", function () {
+    $("#studentBookPagesSidebar").addClass("open");
+    $("#studentBookPagesSidebarOverlay").addClass("show");
+  });
+
+  $(document).on(
+    "click",
+    "#studentBookPagesSidebarClose, #studentBookPagesSidebarOverlay",
+    function () {
+      $("#studentBookPagesSidebar").removeClass("open");
+      $("#studentBookPagesSidebarOverlay").removeClass("show");
+    },
+  );
+}
 function buildCoreFrame(ob) {
   _templatePath = buildTemplatePath();
   if (typeof ob !== undefined && ob != null) {
@@ -360,7 +369,7 @@ function buildCoreFrame(ob) {
     buildHeader(_templateData.header);
     buildFooter(_templateData.footer);
     buildBody(_templateData.body);
-    // buildSubFooter(_templateData.subfooter);
+    buildStudentBookPagesSidebar();   // <-- ضيف هاد السطر
     setLoadedStatus("coreFrame");
   }
 }

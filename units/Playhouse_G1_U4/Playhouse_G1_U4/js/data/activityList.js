@@ -7,7 +7,7 @@ var _activityData = {
          "file"               : "drag_drop_text_1.html",
          "type"               : "standAlone",
          "build"              : "no",
-         "activityCtrls"      : "no",
+         "activityCtrls"      : "yes",
          "layout"             : 1,
          "visited"            : 0,
          "score"              : 0
