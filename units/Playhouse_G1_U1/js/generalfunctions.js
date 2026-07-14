@@ -701,13 +701,19 @@ function doWindowResize() {
     }
 
     //-------------
-    if (isMobile()) maskWidth = 0;
-    if ($('.mask_parent').length > 0) {
-        $('.mask_left').css('width', maskWidth);
-        $('.mask_right').css('width', maskWidth);
+if (isMobile()) {
+    maskWidth = "0px";
+  }
+ 
+  if ($(".mask_parent").length > 0) {
+    var maskWidthNumber = parseFloat(maskWidth) || 0;
+ 
+    $(".rotator").css({
+      right: maskWidthNumber - 15 + "px",
+    });
+  }
 
-        $('.rotator').css('right', (Number(maskWidth.slice(0, -2)) - 15).toString() + 'px');
-    }
+  
 }
 
 function alignStage() {
