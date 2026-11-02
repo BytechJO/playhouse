@@ -1,0 +1,150 @@
+/* =========================================
+   DrawWrite Activity CSS
+   ========================================= */
+
+.bold_text { font-weight: bold; }
+
+/* --- الـ wrapper الرئيسي --- */
+.dw_wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 70%;
+    /* max-width: 640px; */
+    /* margin: 0 auto; */
+    padding: 10px;
+}
+
+/* --- الجانب الأيسر --- */
+.dw_left {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 16px;
+    min-width: 0;
+}
+
+/* --- مربع الرسم --- */
+.dw_draw_box {
+    position: relative;
+    border: 2px solid #4db8e8;
+    border-radius: 14px;
+    background: #fff;
+    padding: 8px;
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dw_draw_label {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    color: #4db8e8;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.dw_canvas {
+    flex: 1;
+    width: 100%;
+    min-height: 160px;
+    cursor: crosshair;
+    display: block;
+    border-radius: 8px;
+    touch-action: none;
+}
+
+/* أزرار الرسم */
+.dw_canvas_ctrls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.dw_btn {
+    background: #e8f6fd;
+    border: 1.5px solid #4db8e8;
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #1a3a5c;
+    transition: background 0.15s;
+}
+.dw_btn:hover { background: #c5eaf8; }
+
+/* --- speech bubble --- */
+.dw_bubble_wrap {
+    display: flex;
+    width: 75%;
+    align-items: center;
+}
+
+.dw_bubble {
+    position: relative;
+    background: #fff;
+    border: 2px solid #4db8e8;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* السهم يمين للشخصية */
+.dw_bubble::after {
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 0 10px 18px;
+    border-style: solid;
+    border-color: transparent transparent transparent #4db8e8;
+}
+.dw_bubble::before {
+    content: '';
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 8px 0 8px 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    z-index: 1;
+}
+
+.dw_input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    font-size: 15px;
+    color: #1a3a5c;
+}
+.dw_input::placeholder { color: #b0cfe0; }
+
+/* --- الشخصية --- */
+.dw_character {
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+.dw_character img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+    .dw_wrap { flex-direction: column; align-items: center; }
+    .dw_character { width: 70px; align-self: flex-end; }
+    .dw_draw_box { min-height: 160px; }
+}

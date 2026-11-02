@@ -1,0 +1,38 @@
+.full_grid_with_background_image .col_grid_container {
+    width: 95%;
+    position: relative;
+}
+
+.full_grid_with_background_image .snap_group_all {
+    width: 96%;
+}
+
+/* =========================== */
+.grid_without_background_image .col_grid_container{
+    padding: 50px;
+}
+/* =========================== */
+
+.full_grid_without_background_image .ss_text .grid_img{
+    /* height: 190px; */
+    padding: 10px;
+}
+
+
+.full_grid_without_background_image .col_grid_container{
+    width: 100% ;
+    margin-bottom: 88px;
+}
+
+.full_grid_without_background_image .snap_group_5 .col_card,
+.full_grid_without_background_image .snap_group_6 .col_card,
+.text_read .col_grid_container .col_card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+/* ============================= */
+.text_read .col_grid_container .col_card{
+    font-size: 28px;
+}

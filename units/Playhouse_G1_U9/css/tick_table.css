@@ -1,0 +1,172 @@
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+  align-items: center;
+}
+
+.tickContent {
+  /* text-align: center; */
+  height: 40px;
+}
+
+.tick_field  {
+  width: 250px;
+}
+
+.pick {
+  background-color: #e9eaea !important;
+}
+
+.tickBox {
+  height: 38px;
+  /* width: 70px; */
+  min-width: 38px;
+  padding: 0;
+  margin: 5px auto;
+  border: none;
+  /* border: 2px solid #d2232a; */
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  /* background-color: #fedcc6; */
+}
+
+td {
+  border: solid 1px #fff;
+  position: relative;
+  height: 58px;
+  min-width: 91px  !important;
+}
+
+.icon_wrap_holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.que_group {
+  position: relative;
+}
+#pick_1_1 {
+  /* background-color: #fff !important; */
+}
+#pick_1_1,#pick_1_2,
+#pick_1_3,#pick_1_4,
+#pick_1_5,#pick_1_6 {
+  background-color: transparent !important;
+}
+
+#pick_1_7,#pick_1_13,
+#pick_1_19,#pick_1_25,#pick_1_31,#pick_1_37,#pick_1_43{
+  /* width: 300px; */
+  padding: 2px 30px;
+  display: flex;
+  justify-content: flex-start;
+  height: 120px;
+  align-items: center;
+  gap: 10px;
+}
+
+.images-border {
+    height: 90px;
+    width: 90px;
+}
+
+.icon_wrap {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+}
+
+.tick_group {
+  width: 60%;
+}
+
+/* ==================================== */
+#shakingImage {
+  height: 150px;
+  position: absolute;
+  top: -49px;
+  left: -70px;
+}
+
+.right_container {
+  position: relative;
+  margin-left: 60px;
+}
+
+.right-image-container {
+  margin-top: 0px;
+  margin-right: 35px;
+  position: relative;
+  display: none;
+  width: 291px;
+  height: 253px;
+  background: #f9f9da;
+  border: 4px solid #d2232a;
+  border-radius: 15px;
+}
+
+.right-image {
+  width: 350px;
+}
+
+.right-image-container .header {
+  display: block;
+  height: 40px;
+  width: 100%;
+  background: #d2232a;
+  border: 1px solid #f9f9da;
+  border-radius: 12px;
+}
+
+.textOnImage-container {
+  position: absolute;
+  top: 2px;
+  left: 28px;
+  width: 256px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right_title {
+  color: #fff;
+  margin-left: 35px;
+  font-size: 26px;
+}
+
+.textOnImage-container .orange_text {
+  font-weight: bolder;
+}
+
+/* Scale the table to the available classroom screen height. */
+.tick_group { width: 100%; max-width: min(1250px, 82vw); --row-size: clamp(42px, calc((100vh - 390px) / 8), 82px); }
+.tick_group .que, .tick_group .tick_fields { width: 100%; }
+.tick_group table { display: table !important; width: 100%; table-layout: fixed; }
+.tick_group td { height: var(--row-size); min-width: 0 !important; text-align: center; }
+.tick_group td:first-child { width: 35%; padding: 1px 12px !important; height: var(--row-size) !important; }
+.tick_group .images-border { width: calc(var(--row-size) - 4px); height: calc(var(--row-size) - 4px); object-fit: contain; flex-shrink: 0; }
+.tick_group .tickContent { height: auto; font-size: clamp(20px, 2vw, 30px); }
+.tick_group .tickBox { height: calc(var(--row-size) - 6px); min-width: 32px; margin: 2px auto; display: flex; align-items: center; justify-content: center; }
+.act_head_group { margin-bottom: -30px !important; }
+.table-label { background-color: #e9eaea; pointer-events: none; }
+@media (max-width: 600px) {
+ .tick_group .tickContent { font-size: 16px; }
+ .tick_group td:first-child { width: 40%; padding: 1px 3px !important; gap: 3px; }
+ .tick_group .images-border { width: 32px; }
+}
+
+.tick_group td:first-child { display: table-cell !important; vertical-align: middle; text-align: left; }
+.tick_group td:first-child .images-border { vertical-align: middle; margin-right: 12px; }
+.tick_group td:first-child .tickContent { display: inline; vertical-align: middle; }
+
+.tick_group td { line-height: 1; }

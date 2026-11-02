@@ -1,0 +1,202 @@
+.screen_elements{
+  width: 80%;
+  align-items: center;
+}
+
+.story{
+  align-items: center;
+  text-align: center;
+}
+
+.group_elm {
+  width: 85%;
+  border-radius: 19px;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.ques_part_space {
+  /* border: 1px solid green;  */
+  min-height: 200px;
+  padding: 7px;
+  width: 100%;
+}
+
+.que {
+  position: relative;
+  height: 145px;
+  width: 100%;
+  margin: 15px auto;
+  padding: 5px 20px;
+}
+
+.q_part {
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: absolute;
+}
+
+.q_num_space {
+  width: 27px;
+}
+
+.picks_grp{
+  margin-top: 30px auto !important;
+  width: 100%;
+}
+
+.all_picks {
+  width: 100%;
+}
+
+.picks_option{
+  margin: 0px auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.pick {
+  width: 242px;
+  text-align: center;
+  padding: 1px 12px !important;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px !important;
+}
+
+.roundedCorners {
+  border-radius: 10px;
+}
+
+.cont_group {
+  box-shadow: 2px 3px 11px #c9c9c9;
+  border-radius: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.cont_group .audioIcon {
+  position: absolute;
+  bottom: 80px;
+}
+
+.icon_wrap_holder {
+  height: 42px;
+  width: 42px;
+}
+
+.tick,
+.cross {
+  width: 32px;
+  height: 32px;
+}
+
+.fill-group {
+  width: 100%;
+
+}
+
+.fill-group input {
+  width: 70%;
+  text-align: center;
+  border: none;
+  height: 44px;
+  margin: 25px 14% 2px !important;
+  border-bottom: 2px solid black;
+}
+
+.fill-group input:focus {
+  outline: none;
+}
+
+.image_space {
+  width: auto;
+
+}
+
+.popup_img img {
+  width: 33%;
+  margin-top: -37px;
+}
+
+.ques_part_space {
+  min-height: fit-content;
+}
+
+.icon_wrap {
+  margin-top: -60px;
+  margin-left: 780px;
+  z-index: 1000;
+}
+
+
+
+/**End**/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+@media (max-width: 1999.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+@media (max-width: 768.98px) {
+  .image_space {
+    width: 315px;
+  }
+
+  .popup_img img {
+    width: 50%;
+    margin-top: 14px;
+  }
+}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+@media (max-width: 575.98px) {
+  .cont_group {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .q_num_space {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .group_elm {
+    width: 100%;
+  }
+
+}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+@media (max-width: 475.98px) {
+  /* .mcq_1_5_q_group {  
+      width: 100%;
+      min-width: 100%;
+      height: intrinsic;
+height: -moz-max-content;
+height: -webkit-max-content;
+height: max-content; 
+    } */
+
+}
+
+@media (max-width: 320px) {}

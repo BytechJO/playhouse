@@ -1,0 +1,292 @@
+.all_cont{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.screen_elements{
+    width: 80%;
+    height: 100%;
+}
+
+.group_elm{
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --temp: #71bfe6;
+}
+
+.image_gap {
+    height: 100%;
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: max-content;
+}
+
+
+.image_space {
+    height: 16vh;
+    margin: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.image_space img {
+    height: 100%;
+    width: auto;
+}
+
+.fillin_set{
+    width: 88%;
+    padding: 15px 0px ;
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+}
+
+.fillin_gr input {
+    border: none;
+    /* flex: 1; */
+    width: 190px;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 2px solid #767676;
+}
+
+.fillin_gr input:focus{
+    outline: none;
+}
+
+.que{
+    width: 500px;
+}
+
+.fillin_gr .icon_wrap_holder {
+    /* position: absolute; */
+    top: 10px;
+    right: 0px;
+}
+
+.fillin_gr {
+    position: relative;
+}
+
+.q_order{
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid var(--temp);
+}
+
+.card{
+    width: 450px;
+    height: 270px;
+    padding: 10px;
+    margin: 0px 30px;
+    border: none;
+    font-size: 24px ;
+    background-color: transparent;
+    align-items: center !important;
+
+}
+
+.card img{
+    /* width: 390px; */
+    height: 285px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    /* border: 4px solid var(--temp); */
+    border-radius: 15px;
+}
+
+.convImg{
+    transform: scale(0.3);
+    /* height: 93px !important; */
+    /* width: 382px !important; */
+    position: absolute;
+    left: -486px;
+    top: -97px;
+}
+
+.card-body{
+    padding: 5px ;
+    width: 100%;
+    align-items: center;
+}
+
+.card-body .txt-audioIcon{
+    position: absolute;
+    top: 23px;
+    left: 110px;
+    width: fit-content;
+    margin: 0px auto;
+}
+.que:nth-child(2) .card-body .txt-audioIcon{
+    left: 130px;
+}
+.icon_wrap{
+    margin-top: 30px;
+    /* z-index: 1000; */
+}
+
+.tick,
+.cross {
+    width: 32px;
+    height: 32px;
+}
+
+
+/**** popup window ***/
+
+
+/* ====================================================== */
+
+
+/*              Media Queries Start                       */
+
+
+/* ====================================================== */
+
+
+/* ------------------------------------------------ */
+
+
+/*              M Q max-width: 1799.98px */
+
+
+/* ------------------------------------------------*/
+
+
+/* // Large devices (desktops, less than 1800px) */
+
+@media (max-width: 1799.98px) {}
+
+
+/* ------------------------------------------------ */
+
+
+/*              M Q max-width: 1399.98px */
+
+
+/* ------------------------------------------------*/
+
+
+/* // Large devices (desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {
+    .img_fillin_gr {
+        width: 60%;
+    }
+}
+
+
+/* ------------------------------------------------ */
+
+
+/*              M Q max-width: 1199.98px */
+
+
+/* ------------------------------------------------*/
+
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    .word_options {
+        margin-bottom: 1vh;
+    }
+}
+
+
+/* ------------------------------------------------ */
+
+
+/*              M Q max-width: 991.98px */
+
+
+/* ------------------------------------------------*/
+
+
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+
+@media (max-width: 991.98px) {
+    .img_fillin_gr {
+        width: 85%;
+    }
+}
+
+
+/* ------------------------------------------------ */
+
+
+/* M Q max-width: 767.98px */
+
+
+/* ------------------------------------------------*/
+
+
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+
+@media (max-width: 767.98px) {
+
+    .image_gap {
+        margin: auto;
+    }
+
+    .img_fillin_gr {
+        width: 95%;
+    }
+
+    .fillin_set {
+        padding-right: 20px;
+    }
+
+    .tick,
+    .cross {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+/* ------------------------------------------------ */
+
+
+/* M Q max-width: 575.98px */
+
+
+/* ------------------------------------------------*/
+
+
+/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+
+@media (max-width: 575.98px) {}
+
+
+/* ------------------------------------------------ */
+
+
+/*              M Q max-width: 475.98px             */
+
+
+/* ------------------------------------------------*/
+
+
+/* body working fine 320 to 475 */
+
+@media (max-width: 475.98px) {
+    .img_fillin_gr {
+        width: auto;
+    }
+}

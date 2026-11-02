@@ -1,0 +1,217 @@
+body{
+  background: linear-gradient(to bottom, #f8f7f7 0%, #ebebeb 100%);
+}
+/* .activity_area{     */
+  /* background-image: url(../images/pages/activities/ASP_3_SB_U6_P32_I1.png); */
+  /* background-size: auto 30%; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 47% bottom; */
+/* } */
+.image img{
+	    width: 250px;
+}
+img.bg_img {
+    width: 70%;
+}
+img.Word_Img {
+    margin-top: 25px;
+}
+.options {
+  font-family: Arcon;
+}
+.word_options{
+  box-shadow: inset 1px 1px 13px 7px rgba(179,197,225,1);
+    display: inline-block;
+    background: white;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 3px 0px 20px 0px;
+    position:sticky;
+    top:0;
+    z-index:3;
+    margin:0 10px;
+  width: intrinsic;
+width: -moz-max-content;
+width: -webkit-max-content;
+width:max-content;
+  font-family: Arcon;
+}
+.clue_grp{
+	width:50%;
+	margin-bottom:10px;
+}
+.word_options div {    
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.puzzleclues {
+  
+    padding: 60px;
+    
+}
+.puzzlematrix{
+    /* margin-left: 0 !important; */
+    position: relative;
+    /* width: 385px; */
+    height: 300px;
+    /* z-index: -1; */
+	margin:30px;
+  }
+  .puzzlematrix .cell{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #f8a141;   
+    text-align: center;
+    position: absolute;  
+    cursor: pointer;
+  }
+  .image {
+    display: none;
+}
+  .puzzlematrix .cell p{
+    font-family: ZNuscriptHeavy;
+    font-size:17px;
+    font-weight: bold;  
+    position: absolute;
+    top: -3px;
+    left: 3px;  
+    color: #5995d6;
+    padding: 0;
+    margin: 0;
+  }
+  .puzzlematrix .cell input[type=text]{
+    font-family: ZNuscriptHeavy;
+    font-size: 32px; 
+    font-weight: bold;
+    text-align:center; 
+    width: 100%;
+    height: 100%;
+    color:black; 
+    border:none;
+    margin: auto;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    padding:0;
+    transform: translate(-50%, -50%);   
+  }
+  .icon_wrap_holder{
+    width:26px;
+	min-width:26px;
+	margin-top:2px;
+}
+.cluetext{width: 400px;}
+.tick, .cross{
+  width:26px;
+  height:26px;
+  margin-top:2px;
+}
+.clueDirection {
+    font-weight: bold;
+    margin-top: 15px;
+}
+.puzzlematrix{
+width:366px;
+height:647px;
+/* border:solid; */
+}
+@media (max-width: 1199.98px) {
+  /* .activity_area{ */
+    /* background-size: auto 10%; */
+    /* background-position: 80% 20%; */
+  /* } */
+  .puzzlematrix{width: 498px;}
+  
+}
+@media (max-width: 990.98px) {
+   /* .activity_area{ */
+    /* background-size: auto 30%; */
+    /* background-position: 100% -10%; */
+
+  /* } */
+.puzzleclues {
+   
+    width: 100%;
+	margin:auto;
+	
+   
+}
+}
+@media (max-width: 767.98px) {
+  /* .activity_area{ */
+  
+    /* background-position: right;   */
+    /* background-size: auto 35%; */
+    /* background-attachment: scroll; */
+  /* } */
+  
+
+}  
+@media (max-width: 640.98px) {
+  
+  /* .activity_area{ */
+   /* background-size: auto 13%; */
+    /* background-position: bottom 10% center;  */
+  /* } */
+  
+}
+@media(min-width:1024px){
+	.puzzleclues {
+   
+    width: 100%;
+	margin:auto;
+	
+   
+}
+}
+
+ /* ------------------------------------------------ */
+  /* M Q max-width: 767.98px */
+  /* ------------------------------------------------*/
+  /* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 768.98px) {
+  /*.activity_area{
+   
+    background-position: top;  
+    background-size: auto 15%;
+    background-attachment: scroll;
+  }
+   .puzzleclues{
+    margin-top: 40%; 
+  } */
+  .word_options{
+      margin:0 10px;
+  }
+	.clue_grp {
+    width: 500px;
+}
+.puzzleclues {
+   
+    width: 100%;
+	margin:auto;
+	
+   
+}
+}
+
+@media (max-width: 640.98px) {
+  /* .puzzleclues{
+    margin-top: 40%; 
+  }
+ .activity_area{
+    background-size: auto 10%;
+    background-position: top;  
+  }*/
+  .puzzlematrix{  
+    width: 535px;  
+  }
+  .clue_grp {
+    width: 500px;
+}
+}
+@media (max-width: 370.98px) {
+  /* .puzzleclues{
+    margin-top: 70%; 
+  } */
+
+}

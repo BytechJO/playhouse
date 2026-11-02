@@ -1,0 +1,113 @@
+.cont_group{
+    width: 100%;
+}
+input[type=text] {
+    border: 3px solid #9c8769;
+    color: black;
+}
+.cont_ht_sf.activity_area{
+    width: 100%;
+}
+.f_i_t_2_q_group .img_box1 {
+    height: 68%;
+    padding-bottom: 10px;
+}
+.f_i_t_2_q_group img{
+    height: 100%;
+}
+.f_i_t_2_q_group{  
+    border-radius: 25px;
+    margin: auto;
+    /* margin: 5px; */
+    text-align: center;
+    min-height: 200px;
+    height:24vh;
+    padding: 10px;
+}
+
+.txt_box input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.text{
+    margin: 10px;
+}
+.icon_wrap{
+    width: 42px;
+}
+.tips_image {
+    display: inline-flex;
+}
+.tips_image img{   
+    width: 80px;
+}
+/**End**/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+@media (max-width: 1199.98px) {  
+ 
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {   
+    /* .f_i_t_2_g_2 img,
+    .f_i_t_2_g_3 img {
+        height: auto;
+        width: 100%;
+    }
+    .f_i_t_2_q_group .img_box1 {
+        height: intrinsic;
+height: -moz-max-content;
+height: -webkit-max-content;
+height: max-content;        
+    }
+    .f_i_t_2_q_group {
+        height: intrinsic;
+height: -moz-max-content;
+height: -webkit-max-content;
+height: max-content;
+        width: 100%;
+        padding: 12px;
+    } */
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+@media (max-width: 767.98px) {
+    /* .fill-group{
+        width: 100vw;
+        margin: auto;
+        text-align: center;
+    } */
+    
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+@media (max-width: 575.98px) {  
+   
+
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+@media (max-width: 475.98px) {
+    /* .f_i_t_2_g_1 img {
+        height: auto;        
+        width: 100%;
+        padding: 0 28px;
+    } */
+ 
+}
+@media (max-width: 320px) {
+  
+}

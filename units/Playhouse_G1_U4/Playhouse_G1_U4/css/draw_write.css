@@ -1,0 +1,137 @@
+.draw_write_cont{
+    width: 100%;
+}
+
+.remember_box{
+    position: relative;
+    border: 2px solid #36a0c7;
+    border-radius: 20px;
+    padding: 15px 20px;
+    max-width: 320px;
+    margin: 0 0 20px 50%;
+    background-color: #ffffff;
+}
+
+.remember_title{
+    text-align: center;
+    color: #36a0c7;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.remember_text b{
+    color: #000;
+}
+
+.remember_text .blue_text{
+    color: #36a0c7;
+}
+
+.remember_img{
+    position: absolute;
+    right: -10px;
+    bottom: -25px;
+    width: 70px;
+}
+
+.draw_write_wrap{
+    width: 80%;
+    align-items: stretch;
+}
+
+
+.draw_box{
+    position: relative;
+    height: 320px;
+    width: 100%;
+}
+
+.draw_canvas{
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #aaa;
+    border-radius: 10px;
+    touch-action: none;
+    cursor: crosshair;
+    background-color: #fff;
+}
+
+.draw_tools{
+    margin-bottom: 8px;
+}
+
+.draw_tool_btn{
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.draw_tool_btn img{
+    width: 18px;
+}
+.draw_box_holder{
+    width: 38%;
+    min-width: 280px;
+    border: 2px solid #36a0c7;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.draw_box_title{
+    text-align: center;
+    color: #36a0c7;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.draw_box{
+    height: 350px;
+}
+
+.sentence_lines{
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sentence_line_row{
+    display: flex;
+    align-items: center;
+    border: 2px solid #36a0c7;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 18px;
+}
+
+.prefix_text{
+    font-weight: 600;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.long_line{
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #595a5a;
+    height: 30px;
+}
+
+.long_line:focus{
+    outline: none;
+}
+
+@media (max-width: 767.98px) {
+    .draw_write_wrap{
+        flex-direction: column;
+    }
+    .draw_box_holder{
+        width: 100%;
+    }
+}

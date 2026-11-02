@@ -1,0 +1,23 @@
+.grid_columns_container {
+    position: relative;
+}
+
+.snap_group_all {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+}
+
+.ss_text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.red_text {
+    color: red;
+}
+
+.snap_card {
+    /* margin-left: 0px !important; */
+    /* line-height: 37px; */
+}

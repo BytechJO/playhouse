@@ -1,0 +1,293 @@
+.all_cont {
+  height: 100%;
+  width: 100%;
+  display: flex !important;
+  justify-content: flex-start !important;
+}
+
+.options {
+  width: 90%;
+}
+
+.audio_icon {
+  height: 39px;
+  padding: 1px;
+}
+
+.screen_elements {
+  width: 100%;
+}
+
+.grou_elm {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+.subTitleTextRight b {
+  color: red;
+}
+
+[class^="group"] {
+  width: 100%;
+  /* padding: 5px 15px; */
+  border-radius: 20px;
+  /* margin-top: 45px; */
+  /* border: 2px solid #7578af; */
+  position: relative;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+}
+
+.group1 {
+  /* background: #fdebf3; */
+}
+
+.group2 {
+  /* background: #f2fbff; */
+  /* border: 4px dashed #93dbf8; */
+}
+
+.image_space img{
+  height: 90px;
+}
+
+.fillin_gr input {
+  width: 200px;
+  /* flex: 1; */
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 1px;
+  text-align: center;
+  height: 31px;
+  margin: 0 10px;
+}
+
+.fillin_gr input:first-child{
+  width: 100px;
+}
+
+.fillin_gr input:focus {
+  outline: none;
+}
+
+.img_fillin_gr {
+  width: 544px;
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.fillin_gr {
+  width: 430px;
+}
+
+.img_fillin_gr:nth-child(even) {
+  width: 445px;
+}
+
+.img_fillin_gr:nth-child(even) .fillin_gr {
+  width: 330px;
+}
+
+.img_fillin_gr:nth-child(even) .fillin_set input{
+  width: 200px;
+}
+
+.fillin_set * {
+  display: inline-block;
+}
+/* /////////////////////////////////////////////////////////// */
+.img_fillin_gr:nth-child(odd) .fillin_set{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/pages/activities/6-img-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 101px;
+  padding-bottom: 22px;
+}
+.img_fillin_gr:nth-child(even) .fillin_set{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/pages/activities/6-img-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 71px;
+  padding-bottom: 22px;
+}
+/* ////////////////////////////////////////////////////////// */
+.q_space,
+.fillin_set {
+  width: 100%;
+}
+
+/* .img_fillin_gr:nth-child(-1n + 3) {
+  background: #f00;
+} */
+
+.title {
+  /* border: 1px solid #8f91bf; */
+  /* position: absolute; */
+  /* top: -42px; */
+  padding: 0px 20px;
+  display: block;
+  width: fit-content;
+  margin: 0px auto;
+  /* border-radius: 10px 10px 0 0; */
+  /* color: #1a3281; */
+  /* background-color: #cccde3; */
+  font-weight: bolder;
+}
+
+.grp_image {
+  position: absolute;
+  top: -174px;
+  left: 126px;
+  padding: 0px 20px;
+  height: 169px;
+}
+
+.image-container {
+ 
+}
+
+.image-container img {
+  position: absolute;
+  height: 136px;
+  z-index: -1;
+}
+
+.img-0{
+  top: 65px;
+  right: 116px;
+}
+
+.img-1{
+  top: 236px;
+  right: 101px;
+}
+
+.img-2{
+  top: 397px;
+  right: 115px;
+}
+
+.tick,
+.cross {
+  width: 32px;
+  height: 32px;
+}
+
+.clue_word {
+  /* margin: 15px; */
+  width: 530px;
+}
+
+.word_options {
+  width: 93%;
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  margin: 20px 0px;
+  background-color: white;
+}
+
+.word_opt_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.nextNav {
+  right: 0;
+}
+
+.backNav {
+  left: 0;
+}
+
+.images {
+  height: 200px;
+}
+
+
+.icon_wrap_holder {
+  position: absolute;
+  right: 10px;
+}
+
+.textEnd {
+  text-align: start;
+}
+
+.red,
+.blue {
+  font-weight: bold;
+}
+
+
+/**** popup window ***/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1799.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1800px) */
+@media (max-width: 1799.98px) {}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 1399.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .word_options {
+    margin-bottom: 1vh;
+  }
+
+  .img_fillin_gr {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 767.98px) {}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+@media (max-width: 575.98px) {}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+/* body working fine 320 to 475 */
+@media (max-width: 475.98px) {}

@@ -1,0 +1,62 @@
+PH1 final edit - implementation status (18 October 2026)
+
+Work is in the separate public repository BytechJO/PH1-final-edit, deployed on Vercel at https://ph1-final-edit.vercel.app/. The original upstream has not been modified.
+User-approved dog replacement and twoKids-01.svg have been published. Kids colouring clips strokes to the supplied SVG silhouettes. No video replacements made.
+
+QA:
+PH-01: Changed Unit 15 SB activity to circle THE and underline the noun, preserving all four original sentences. Verified against source p114. All four correct responses pass in browser.
+PH-02: Preserve straight/curly apostrophes, normalize curly apostrophes for grading, correct answer keys. Six correctly punctuated fields pass browser check.
+PH-03: Q4 now uses we in both answers; expected answer remains No, we don't.
+PH-04 through PH-18: Corrected reported text, ordinals and missing optional subtitle rendering.
+PH-19: Clarified THE instruction from actual activity data (not adjective); removed undefined subtitle.
+PH-20: Removed undefined optional subtitle.
+PH-21: Still requires video content verification and user discussion. Story and conversation still reference the same video. New supplied videos are companion lessons, not necessarily direct story replacements.
+PH-22: Bracketed page-number cue confirmed in original Student Book p13; retained. No trailing apostrophe found in current song text.
+PH-23: Corrected GRAMMAR letter sequence across all 15 units.
+PH-24 through PH-30: Page menu now includes existing pages regardless of build flag; build:no identifies standalone activities, not hidden pages.
+
+Missing audio implemented:
+- Read titles in all 15 unit introductions.
+- Unit 1 slide 1-4 radio tracks; song, song heading and prompt.
+- Unit 2 sentence-building right-hand explanation.
+- Unit 6 Write about you prompt; song radio track.
+- Unit 7 ordinal word recordings, Match, Now write about you, available sentence fragments, PHONICS heading.
+- Unit 8 question prompts, Point and say examples, Look and write, Circle ll.
+- Unit 9 Class writing prompt and paragraph prompt.
+- Unit 10 Now write about things prompt.
+- Unit 12 Answer prompt, question recordings, Play the game and description prompt.
+
+Validation:
+- 87 changed JavaScript files parsed successfully at the first syntax-check checkpoint.
+- git diff --check passed.
+- Browser: Unit 1 contraction exercise accepted straight/curly apostrophes; Unit 7 personal writing accepts typing and newly included menu entries are present; Unit 15 THE/noun exercise passed all four answers.
+- Added audio path existence audit passed.
+- These checks are not a full audio listening/content review or full 15-unit regression.
+
+Latest completion pass (18 October 2026):
+- U7: reused the supplied Look and say instruction from U6; corrected its prompt link.
+- U8: linked Roller skate, Bicycle and Teddy bear. Added separate speaker buttons; playing an option does not select an answer.
+- U12: linked supplied My mum works in a hospital recording to the matching illustrated example.
+- U6 song: removed unrelated legacy per-line audio links; the supplied complete song remains available through the radio player. No invented per-line recordings.
+- U9 SB69: compact table layout now shows all seven rows at 1280x720; all five character and five linked food images load. Fixed row closing markup and prevented label cells from accepting answers.
+
+Latest verification:
+- Checked 386 page references in activity lists (Student Book, Workbook and Review): no missing HTML targets. This is a path audit, not 386 browser interaction tests.
+- Checked 53 supplied-audio references in data files: no missing files.
+- All five newly linked MP3s return HTTP 200 with audio/mpeg and nonempty content locally.
+- U8 browser: all three speaker buttons exercised without console errors or selecting an answer; wrong answer rejected, reset works, correct answer accepted.
+- U9 browser: five character/five food images loaded; complete table fits; existing answer key accepted; next-page navigation opens Class writing. The listening-derived answer key still needs semantic audio review.
+- U15 Review browser: strokes crossing both children are clipped out of the background; Undo works; all three completed sentences pass. Clear was tested in the previous colouring pass.
+- U1 contractions and U15 THE/noun tests passed in the earlier QA pass (not rerun in this pass).
+- Full listening/content verification of every recording and exhaustive interaction testing of all 15 units have NOT been completed.
+
+Still pending / source-dependent:
+- U9 SB69: the source PDF also shows fizzy-drinks and popcorn pictures, but their image fields are empty. No matching standalone assets identified in the inspected U9 image folders. Needs supplied/approved images before marking the table fully matched to the book. Current text rows remain usable.
+- Partial U11/U15 recordings: supplied missing-parts folders contain only Read.mp3, with no identified complete replacement for the reported listening activities. Existing tracks remain linked; completeness unverified.
+- U2 p17 poem, remaining title/prompt placeholders and unnamed ElevenLabs recording require content identification; filenames alone are insufficient.
+- Missing conversation/story videos and PH-21 U6 duplicate video: pending correct media and user discussion.
+- Other missing images/activities listed in the source review remain outside this completion pass. Full Student Book and Workbook PDFs are now available in G1 Pdf.
+
+U9 table follow-up: all 12 user-supplied character/food PNGs linked unchanged, including cola and popcorn. Table expanded to 1250px maximum with screen-height-scaled rows and larger text. Prior missing-table-image note is resolved.
+
+Workbook U1 p6 completed: two separate slides WB_G1_U1_P6_1.html (bag) and WB_G1_U1_P6_2.html (rubber), inserted after page 5. User-supplied SVGs and heading copied unchanged. Five numbered colours, bounded click-to-fill, Undo and Clear colours per slide. Existing answer checker grades the word only; colours are not automatically graded. Browser tests: wrong word rejected, bag/rubber accepted, fill stays in clicked region, Undo/Clear work, next link connects the two slides.

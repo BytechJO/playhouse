@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        playhouse
+    </title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <style id='ui_style'>
+    </style>
+     <link rel="stylesheet" href="../css/all.min.css">
+     <!-- Font Awesome -->
+       <!-- <script src="https://use.fontawesome.com/46af14eb3c.js"></script> -->
+     <link rel="stylesheet" href="../css/draw.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/unit_styles.css">
+    <link rel="stylesheet" href="../css/activities.css">
+    <link rel="stylesheet" href="../css/audio.css">
+    <link rel="stylesheet" href="../css/fillin_text_2.css">
+
+    <!-- [ Activity build CSS file ] -->
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.ui.touch-punch.min.js" text="text/javascript"></script>
+    <!-- [ Data for Header and Footer ] -->
+    <script src="../js/data/templateData.js" type="text/javascript"></script>
+    <!-- [ / Data for Header and Footer ] -->
+    <!-- [ Data containing all activity files ] -->
+    <script src="../js/data/activityList.js" type="text/javascript"></script>
+    <script src="../js/data/fillin_text_3_data.js" type="text/javascript"></script>
+	<script src="../js/build/jsonRender.js"></script>
+<link rel="stylesheet" href="../../../css/g1-responsive.css?v=20261027b">
+<style id="u12-layout">body .options{zoom:1!important;width:calc(100% - 190px)!important;max-width:1240px;height:auto!important;margin:28px auto!important}.options .all_cont,.options .screen_elements,.options .group_elm{width:100%!important;height:auto!important;margin:0!important}.options .contant{font-size:22px!important;min-width:0!important}.options .fillin_gr,.options .q_space{width:100%!important}.options .fillin_set{width:100%!important;align-items:baseline!important;gap:8px!important}.options .text_input_area{font-size:22px!important}.options .icon_wrap_holder{flex-shrink:0}.options .col_grid_container>img[src=""]{display:none!important}body .options{max-width:960px!important}.options .ques{width:100%!important}.options .que{width:100%!important;margin:0 0 24px!important;padding:14px 20px;border:1px solid #b6e4f3;border-radius:12px}.options .fillin_set{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:12px!important}.options .contant{font-size:27px!important}.options input.txtInput{width:100%!important;margin:0!important;height:40px!important;font-size:26px!important}.options .image_space[src=""]{display:none}</style><style id="u12-refine">.options .que,.options .fillin_gr,.options .q_space,.options .fillin_set{height:auto!important;min-height:0!important}.options input.txtInput{flex:none!important;height:38px!important;min-height:38px!important;max-height:38px!important;border-bottom:1px solid #555!important}</style><style>@media(max-height:800px){body .options{margin-top:15px!important}.options .que{padding:8px 16px!important;margin-bottom:12px!important}.options .contant{font-size:24px!important}.options .fillin_set{gap:4px!important}}</style><link rel="stylesheet" href="../../../css/g1-sentence-placement.css?v=1">
+</head>
+
+<body class="ui-repair">
+    <div class="mask_parent">
+        <div class="mask_left"></div>
+        <div class="mask_right"></div>
+    </div>
+    <div class='loading'>
+        <div class="loader"></div>
+    </div>
+    <header class='fixed-top'></header>
+    <div class='mainContent'>
+         <div id="feedbackPopup" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div>
+                        <button type="button" class="close closeFeedback" data-dismiss="modal">
+                            &times;</button> 
+                    </div>
+                    <div class="modal-body">
+                        <video id="video_1" src="../videos/goodjob.mp4" preload></video> 
+                        <video id="video_2" src="../videos/tryagain.mp4" preload></video>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container content_wrap activity_wrap">
+            <!-- screen numbering starts here  -->
+            <div class='fixed-top screen_numbers_wrap' style="z-index:2;"></div>
+            <!-- // screen numbering ends here  -->
+            <!-- activity panel content starts here  -->
+              <div class='activity_buts d-none' data-buttons='ccss,link,tips,homework'>
+                <div class='ccss_content' data-height=''>L.1.1 </div>
+                <div class='link_content' data-height=''>
+                    <a href='../../../ARC_1_1_SB/ARC_1_1_SB_U3/index.html' target="blank">playhouse Reading
+                        Unit 3 &ndash; All Aboard!</a>
+                </div>
+                <div class='tips_content' data-height=''>
+                    <span class="pop_title">Possessive Adjectives </span><br />
+                    <span><span style="font-weight: bold;">Possessive Adjectives
+                    </span> 
+                    show when something belongs to someone.<br>Some possessive adjectives are “my,” “your,” “his,” “her,” and “its.”
+                </span><br />Example: This is Lana’s car.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is<span style="font-weight: bold;"> her</span> car.</div>
+                <div class='homework_content' data-height=''>
+                    Have your child read to you the complete sentences.
+                </div>
+            </div>
+            <!-- // activity panel content ends here  -->
+            <!-- activity interactive area starts here  -->
+            <div class='activity_container activity_area fill_in mx-auto' data-activity='fillin'>
+                <!-- <div class="act_head_group d-flex justify-content-start"><div class="keyIcon"><img src="../images/icons/key_icon.png"></div><div class="activityHeading">Find and color by dragging on the letters.</div></div>            
+               
+                <div class="options d-flex flex-wrap">                        
+                    <div class='wordmatrix_holder mt-3'>
+                        <div class='wordmatrix'></div>
+                    </div>
+                    <div class='wordlist mt-3'></div>
+                </div> -->
+
+
+            </div>
+            <!-- // activity interactive area ends here -->
+        </div><!-- / container content_wrap -->
+    </div>
+    <!-- activity panel popup starts here  -->
+    <div class="modal fade activityCtrlPanel" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="ctrlIcon">
+                    </div>
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // activity panel popup ends here  -->
+    <div class="sub_footer">
+
+        <!-- the sub-footer starts here  -->
+        <div class='container sub_footer_buttons_wrap'></div>
+        <!-- // the sub-footer ends here  -->
+    </div>
+    <footer class='fixed-bottom'></footer>
+    <script>
+        var _mediaList = {
+            "image": [],
+            "audio": [],
+            "video": []
+        };
+    </script>
+
+
+    <script src='../js/build/toolbar.js' type='text/javascript'></script>
+    <script src="../js/build/template.js?v=final-audit" type="text/javascript"></script>
+    <script src="../js/build/fillin_text.js" type="text/javascript"></script>
+    <script src="../js/build/audio.js"></script>
+    <script src='../js/build/radio_build.js' type='text/javascript'></script>
+    <script src='../js/generalfunctions.js' type='text/javascript'></script>
+    <script src="../js/activity/fillin.js" type="text/javascript"></script>
+    <script src="../js/activities.js" type="text/javascript"></script>
+    <script src='../js/loading.js' type='text/javascript'></script>
+    <script src='../js/sketchpad.js' type='text/javascript'></script>
+<script src="../../../js/g1-responsive.js?v=20261027b"></script>
+<script>(()=>{let n=0,t=setInterval(()=>{if(document.querySelector('.que[data-qno="3"] b')){clearInterval(t);document.querySelector('.que[data-qno="3"] b').textContent='3';}else if(++n>100)clearInterval(t)},50)})();</script><script src="../../../js/g1-sentence-placement.js?v=1"></script>
+</body>
+
+</html>

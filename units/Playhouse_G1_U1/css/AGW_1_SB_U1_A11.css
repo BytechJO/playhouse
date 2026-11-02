@@ -1,0 +1,202 @@
+.mainTitleIcon {
+  top: -15px;
+}
+
+.page_sub_title img {
+  height: 60px;
+}
+
+
+.mcq_1_5_q_group{
+    border: 2px solid rgba(231, 231, 231, 0);    
+  }
+  .selectedDefault{
+    border-color: rgb(13, 137, 202);
+  }
+.right_space{
+  margin-right: 15px;
+}
+
+.q_num_space  {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.opction_grp {
+  gap: 50px;
+}
+  .mcq_1_5_q_group{   
+    text-align: center;       
+    padding: 2px;
+    overflow: hidden;
+    position:relative;
+  }  
+  .sub_title, .txt_box{
+    text-align: left;
+    font-family: Arcon;
+    /* font-size: 28px;   */
+  }
+  .sub_title{
+    color: #d02426;
+    margin-left: 60px;
+  }
+  .txt_box{
+    min-height: 35px;
+  }
+  .activityHeading{
+    font-family: arcon;
+  }
+  .selX{  
+    height: 30vh;
+  }
+  .image_space{
+    height: 18vh;
+    margin: auto;
+  }
+  .image_space img{
+    height: 100%;
+  }
+  /* .icon_wrap {
+    position: absolute;
+    right:0;
+  } */
+    .cont_group .audioIcon{
+    position: absolute;
+    bottom: 80px;
+  }
+  #que_3 .image_space{
+	      height: 20vh;
+  }
+  /**End**/
+
+  .mcq_1_5_q_group{
+    border: 2px solid rgba(231, 231, 231, 0);    
+  }
+  .selectedDefault{
+    border-color: rgb(13, 137, 202);
+  }
+.right_space{
+  margin-right: 15px;
+}
+
+  .sub_title, .txt_box{
+    text-align: left;
+    font-family: Arcon;
+    /* font-size: 28px;   */
+  }
+  .sub_title{
+    color: #d02426;
+    margin-left: 60px;
+  }
+  .txt_box{
+    min-height: 35px;
+  }
+  .activityHeading{
+    font-family: arcon;
+  }
+  .selX{  
+    height: 30vh;
+  }
+  .image_space{
+    height: 18vh;
+    margin: auto;
+  }
+  .image_space img{
+    height: 100%;
+  }
+  /* .icon_wrap {
+    position: absolute;
+    right:0;
+  } */
+  .cont_group {
+    position: relative;
+    border-radius: 20px;
+    width: 470px;
+  }
+    .cont_group .audioIcon{
+    position: absolute;
+    bottom: 80px;
+  }
+  #que_3 .image_space{
+	      height: 20vh;
+  }
+  
+  /* ====================================================== */
+  /*              Media Queries Start                       */
+  /* ====================================================== */
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 1199.98px */
+  /* ------------------------------------------------*/
+  @media (max-width: 1199.98px) {  
+    .image_space{
+      max-height: 133px;
+      min-height: 100px;
+    }
+  }
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 991.98px */
+  /* ------------------------------------------------*/
+  /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+  @media (max-width: 991.98px) {   
+   
+  }
+  /* ------------------------------------------------ */
+  /* M Q max-width: 767.98px */
+  /* ------------------------------------------------*/
+  @media (max-width: 767.98px) {     
+    .image_space img{
+      height: auto;
+      width: 100%;
+    }
+    .image_space{
+      height:  auto !important;
+      width: 100%;
+      max-height: max-content;
+    }
+  }
+  /* ------------------------------------------------ */
+  /* M Q max-width: 575.98px */
+  /* ------------------------------------------------*/
+  @media (max-width: 575.98px) {  
+   .cont_group {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-width: 300px;
+	
+}
+     
+   
+  }
+  /* ------------------------------------------------ */
+  /*              M Q max-width: 475.98px             */
+  /* ------------------------------------------------*/
+  @media (max-width: 475.98px) {    
+    /* .mcq_1_5_q_group {  
+      width: 100%;
+      min-width: 100%;
+      height: intrinsic;
+height: -moz-max-content;
+height: -webkit-max-content;
+height: max-content; 
+    } */
+  }
+  @media (max-width: 320px) {  
+  
+  }
+  
+  .d-grid{
+    display: grid !important;
+  }
+  .grid-column-2{
+    grid-template-columns: 1fr 1fr;
+  }
+  .ml-100{
+    margin-left: 100px !important;
+  }
+  .w-80{
+    width: 80% !important;
+  }
+  .m-auto{
+    margin: auto;
+  }

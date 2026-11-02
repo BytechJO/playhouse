@@ -1,0 +1,104 @@
+.all_cont {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.func_ctrls{
+  display: none !important;
+}
+
+.tickContent {
+  text-align: center;
+  height: 40px;
+}
+
+.tick_field  {
+  width: 250px;
+}
+
+.writeBoxWrap {
+    margin-top: 5px;
+}
+.writeBoxInput {
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    /* border-radius: 8px; */
+    font-size: 16px;
+    background: transparent;
+}
+
+
+
+.pick {
+  background-color: #e9eaea !important;
+}
+
+.tickBox {
+  height: 38px;
+  /* width: 70px; */
+  min-width: 38px;
+  padding: 0;
+  margin: 5px auto;
+  border: none;
+  /* border: 2px solid #d2232a; */
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  /* background-color: #fedcc6; */
+}
+
+td {
+  border: solid 1px #fff;
+  position: relative;
+  height: 58px;
+  min-width: 135px  !important;
+  text-align: center;
+}
+
+.icon_wrap_holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.que_group {
+  position: relative;
+}
+#pick_1_1 {
+  /* background-color: #fff !important; */
+}
+#pick_1_1,#pick_1_2,
+#pick_1_3,#pick_1_4,
+#pick_1_5 {
+  background-color: transparent !important;
+}
+
+#pick_1_6,#pick_1_11,
+#pick_1_16,#pick_1_21,#pick_1_26{
+  min-width: 235px  !important;
+  padding-left: 20px;
+}
+
+.images-border {
+  height: 103px;
+  border-radius: 50%;
+}
+
+.icon_wrap {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+}
+
+.tick_group {
+  width: 60%;
+}
